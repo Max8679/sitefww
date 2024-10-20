@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+
+@layer base {
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('./assets/fonts/Stolzl-Bold.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Stolzl Book';
+        src: url('./assets/fonts/Stolzl-Book.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('./assets/fonts/Stolzl-Light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('./assets/fonts/Stolzl-Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('./assets/fonts/Stolzl-Thin.woff2') format('woff2');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Stolzl';
+        src: url('./assets/fonts/Stolzl-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    
+    
+    
+}
