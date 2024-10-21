@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -626,6 +626,32 @@ video {
   font-display: swap;
 }
 
+body {
+  font-family: 'Stolzl';
+}
+
+h1 {
+  font-size: 7.5rem;
+  foont-weight: 100;
+  opacity: 0.73;
+  color: white;
+}
+
+.title {
+  font-family: 'Stolzl Book';
+  color: black;
+  opacity: 0.73;
+  font-size: 1.625rem;
+}
+
+.link {
+  font-family: 'Stolzl Book';
+  color: white;
+  opacity: 0.73;
+  font-size: 2.0625rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .flex {
   display: flex;
 }
@@ -640,6 +666,24 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.gap-\[2\.6875rem\] {
+  gap: 2.6875rem;
+}
+
+.bg-\[url\(\'\.\/assets\/img\/header\.webp\'\)\] {
+  background-image: url('./assets/img/header.webp');
+}
+
+.px-\[7rem\] {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.py-\[1\.375rem\] {
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
 }
 
 .uppercase {
