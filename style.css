@@ -1069,7 +1069,7 @@ h1 {
   opacity: 0%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 28.125rem) {
   .mob\:pain {
     padding: 1.125rem 1.75rem 1.125rem 2.375rem;
     background-color: #626262;
