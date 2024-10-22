@@ -853,24 +853,16 @@ h1 {
   height: 5.75rem;
 }
 
+.h-\[56\.675rem\] {
+  height: 56.675rem;
+}
+
 .h-\[59\.438rem\] {
   height: 59.438rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[59\.625rem\] {
-  height: 59.625rem;
-}
-
-.h-\[56\.675rem\] {
-  height: 56.675rem;
-}
-
-.h-\[46\.975rem\] {
-  height: 46.975rem;
 }
 
 .w-\[20\.4375rem\] {
@@ -896,10 +888,6 @@ h1 {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[92\.5rem\] {
-  width: 92.5rem;
 }
 
 .flex-row {
@@ -959,28 +947,8 @@ h1 {
   background-image: url('./assets/img/шот2-фон1.webp');
 }
 
-.bg-\[length\:92\.5rem_46\.975rem\] {
-  background-size: 92.5rem 46.975rem;
-}
-
-.bg-\[length\:92\.5rem_56\.675rem\] {
-  background-size: 92.5rem 56.675rem;
-}
-
-.bg-\[length\:92\.5rem_59\.625rem\] {
-  background-size: 92.5rem 59.625rem;
-}
-
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1033,10 +1001,6 @@ h1 {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-90 {
-  opacity: 0.9;
 }
 
 .opacity-95 {
@@ -1105,7 +1069,7 @@ h1 {
   opacity: 0%;
 }
 
-@media (max-width: 26.125rem) {
+@media (max-width: 450px) {
   .mob\:pain {
     padding: 1.125rem 1.75rem 1.125rem 2.375rem;
     background-color: #626262;
@@ -1196,28 +1160,12 @@ h1 {
     align-self: flex-end;
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/block-3-adaptation\.png\'\)\] {
-    background-image: url('./assets/img/block-3-adaptation.png');
-  }
-
-  .mob\:bg-\[url\(\'\.\/assets\/img\/mob-bg-1\.png\'\)\] {
-    background-image: url('./assets/img/mob-bg-1.png');
-  }
-
-  .mob\:bg-\[url\(\'\.\/assets\/img\/mob-bg-1\.webp\'\)\] {
-    background-image: url('./assets/img/mob-bg-1.webp');
-  }
-
   .mob\:bg-\[url\(\'\.\/assets\/img\/block-3-adaptation\.webp\'\)\] {
     background-image: url('./assets/img/block-3-adaptation.webp');
   }
 
-  .mob\:bg-\[length\:28\.125rem_49\.6875rem\] {
-    background-size: 28.125rem 49.6875rem;
-  }
-
-  .mob\:bg-\[length\:28\.125rem_74\.6875rem\] {
-    background-size: 28.125rem 74.6875rem;
+  .mob\:bg-\[url\(\'\.\/assets\/img\/mob-bg-1\.webp\'\)\] {
+    background-image: url('./assets/img/mob-bg-1.webp');
   }
 
   .mob\:bg-cover {
