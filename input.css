@@ -1,115 +1,224 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
-
+@tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: 'Stolzl';
-        src: url('./assets/fonts/Stolzl-Bold.woff2') format('woff2');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Stolzl Book';
-        src: url('./assets/fonts/Stolzl-Book.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Stolzl';
-        src: url('./assets/fonts/Stolzl-Light.woff2') format('woff2');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Stolzl';
-        src: url('./assets/fonts/Stolzl-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Stolzl';
-        src: url('./assets/fonts/Stolzl-Thin.woff2') format('woff2');
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Stolzl';
-        src: url('./assets/fonts/Stolzl-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    body {
-        font-family: 'Stolzl';
-    }
+  @font-face {
+    font-family: "Stolzl";
+    src: url("./assets/fonts/Stolzl-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 
+  @font-face {
+    font-family: "Stolzl Book";
+    src: url("./assets/fonts/Stolzl-Book.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Stolzl";
+    src: url("./assets/fonts/Stolzl-Light.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Stolzl";
+    src: url("./assets/fonts/Stolzl-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Stolzl";
+    src: url("./assets/fonts/Stolzl-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Stolzl";
+    src: url("./assets/fonts/Stolzl-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  body {
+    font-family: "Stolzl";
+  }
+
+  h1 {
+    font-size: 7.5rem;
+    font-weight: 100;
+    opacity: 0.73;
+    color: white;
+    line-height: 100%;
+  }
+
+  .subtitle {
+    font-weight: 100;
+    opacity: 0.73;
+    font-size: 1.875rem;
+    color: white;
+    line-height: normal;
+  }
+
+  .small {
+    font-size: 1rem;
+    opacity: 0.73;
+    font-weight: 200;
+    color: black;
+    line-height: normal;
+  }
+
+  .small-white {
+    font-size: 1rem;
+    opacity: 0.73;
+    font-weight: 100;
+    color: white;
+  }
+
+  .title {
+    font-family: "Stolzl Book";
+    color: black;
+    opacity: 0.73;
+    font-size: 1.625rem;
+  }
+
+  .link {
+    font-family: "Stolzl Book";
+    color: white;
+    opacity: 0.73;
+    font-size: 2.0625rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .link-blue {
+    font-family: "Stolzl Book";
+    opacity: 0.73;
+    color: #0070b7;
+    font-size: 1.375rem;
+  }
+
+  .regular {
+    font-family: "Stolzl";
+    color: black;
+    opacity: 0.73;
+    font-weight: 200;
+    font-size: 1.375rem;
+    line-height: normal;
+  }
+
+  .regular-book {
+    font-family: "Stolzl Book";
+  }
+
+  .regular-regular {
+    font-weight: 400;
+  }
+
+  @media (max-width: 28.125rem) {
     h1 {
-        font-size: 7.5rem;
-        foont-weight: 100;
-        opacity: 0.73;
-        color: white;
+      font-size: 4.375rem;
     }
-    
+
     .subtitle {
-        font-weight: 100;
-        opacity: 0.73;
-        font-size: 1.875rem;
-        color: white;
-    }
-    
-    .small {
-        font-size: 1rem;
-        opacity: 0.73;
-        font-weight: 100;
-        color: black;
-    }
-
-    .small-white {
-        font-size: 1rem;
-        opacity: 0.73;
-        font-weight: 100;
-        color: white;
-    }
-
-    .title {
-        font-family: 'Stolzl Book';
-        color: black;
-        opacity: 0.73;
-        font-size: 1.625rem;
-    }
-
-    .link {
-        font-family: 'Stolzl Book';
-        color: white;
-        opacity: 0.73;
-        font-size: 2.0625rem;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-
-    .link-blue {
-        font-family: 'Stolzl Book';
-        opacity: 0.73;
-        color: #0070B7;
-        font-size: 1.375rem;
+      font-size: 1.125rem;
     }
 
     .regular {
-        font-family: 'Stolzl Book';
-        color: black;
-        opacity: 0.73;
-        font-size: 1.375rem;
+      font-size: 18px;
     }
+  }
+}
+
+@layer components {
+  .pain {
+    padding: 1.125rem 1.75rem 1.125rem 2.375rem;
+    background-color: #626262;
+    border-radius: 1.875rem 1.875rem 1.875rem 0rem;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .pain p {
+    font-size: 1rem;
+    opacity: 0.73;
+    font-weight: 200;
+    color: white;
+    line-height: normal;
+  }
+
+  .pain-left {
+    padding: 1.125rem 2.375rem 1.125rem 1.75rem;
+    border-radius: 1.875rem 1.875rem 0rem 1.875rem;
+  }
+}
+
+@layer utilities {
+  .margin-top-16 {
+    margin-top: 1rem;
+  }
+
+  .margin-bottom-16 {
+    margin-bottom: 1rem;
+  }
+
+  .margin-top-24 {
+    margin-top: 1.5rem;
+  }
+
+  .margin-top-8 {
+    margin-top: 0.5rem;
+  }
+
+  .margin-bottom-8 {
+    margin-bottom: 0.5rem;
+  }
+
+  .margin-left-69 {
+    margin-left: 4.3125rem;
+  }
+
+  .margin-right-107 {
+    margin-right: 6.6875rem;
+  }
+
+  .margin-left-108 {
+    margin-left: 6.75rem;
+  }
+
+  .margin-right-108 {
+    margin-right: 6.75rem;
+  }
+
+  .margin-left-60 {
+    margin-left: 3.75rem;
+  }
+
+  .margin-left-30 {
+    margin-left: 1.875rem;
+  }
+
+  .margin-right-90 {
+    margin-right: 5.625rem;
+  }
+}
+
+.pain-opacity {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.pain-opacity-0 {
+  transition: opacity 0.5s ease-in;
+  opacity: 0%;
 }

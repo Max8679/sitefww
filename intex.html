@@ -4,14 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      html {
+        font-size: calc(-0.005394605394605456rem + 1.086913086913087vw);
+      }
+      @media screen and (max-width: 1480px) {
+        html {
+          font-size: calc(-0.005394605394605345rem + 1.0869130869130867vw);
+        }
+      }
+      @media screen and (max-width: 479px) {
+        html {
+          font-size: calc(-1.9956896551724141rem + 10.206896551724139vw);
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html {
+          font-size: calc(-0.0022271714922048997rem + 3.5634743875278394vw);
+        }
+      }
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("/assets/img/Шот.jpg");
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <script src="./script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header class="flex h-[5.75rem] flex-col text-white">
       <nav
-        class="flex gap-[2.6875rem] bg-[url('./assets/img/header.webp')] px-[7rem] py-[1.375rem]"
+        class="flex justify-end bg-[url('./assets/img/header.webp')] bg-cover px-[7rem] pb-[2.9375rem] pt-[1.375rem]"
       >
-        <ul class="menu flex flex-row">
+        <ul class="link flex flex-row gap-[2.6875rem]">
           <li class="menu-item">
             <a href="" class="menu-item-style uppercase">Главная</a>
           </li>
@@ -27,5 +56,185 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section
+        class="h-[59.438rem] bg-[url('./assets/img/шот1-1.webp')] bg-[length:92.5rem_59.625rem] bg-no-repeat"
+      >
+        <div class="-mt-[6.8125rem] ml-[5.8125rem] w-fit pt-[1.375rem]">
+          <h1 class="z-50 mb-2 uppercase">
+            Шот <br />
+            Жизни
+          </h1>
+          <p class="subtitle">
+            проект писателя <br />
+            Франца Вертфоллена
+          </p>
+        </div>
+      </section>
+      <section
+        class="bg-[url('./assets/img/шот2-фон1.webp')] bg-[length:92.5rem_56.675rem] bg-no-repeat pt-[6.125rem]"
+      >
+        <div>
+          <div
+            class="small bg-lightGray mx-auto mb-[6.375rem] flex w-[31.25rem] flex-col items-center rounded-[1.875rem] py-[1.375rem]"
+          >
+            <p class="title">Напоминание</p>
+            <div class="my-[1.125rem] flex flex-col items-center">
+              <p>Нет слабых и сильных людей.</p>
+              <p class="my-2 text-center">
+                Есть люди, которые научились работать <br />
+                со своей нервной системой,
+              </p>
+              <p>и все остальные.</p>
+            </div>
+            <div class="bg-darkLiver mb-[1.125rem] h-[0.0625rem] w-full"></div>
+            <a href="" class="link-blue block"><div>Принять</div></a>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="h-[27.9375rem] w-[39.8125rem]">
+            <img
+              src="./assets/img/шот-надпись.webp"
+              class="w-full"
+              alt="Шот Жизни"
+            />
+          </div>
+          <div class="regular mb-[9.3125rem] mt-[6.45rem]">
+            <p class="-ml-[13.775rem] mb-[3.75rem]">
+              - это всё, что
+              <span class="regular-book">не объяснили вам родители,</span><br />
+              и чего
+              <span class="regular-book"
+                >не дала образовательная система —</span
+              >
+            </p>
+            <p class="-ml-[1.8438rem]">
+              это
+              <span class="regular-book">азбука современного человека,</span>
+              <br />
+              выстраивающая в вас наиболее безболезненный <br />
+              <span class="ml-[0.4ch]">и результативный подход к жизни.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[url('./assets/img/block-3.webp')] bg-[length:92.5rem_46.975rem] bg-top bg-no-repeat py-[1.3125rem]"
+      >
+        <div class="regular regular-book mx-auto text-center">
+          <p class="mb-4">
+            Мы научим вас <br />
+            <span class="regular font-normal">понимать ваш мозг</span> и сделать
+            его
+            <span class="regular font-normal">своим другом, а не врагом.</span>
+          </p>
+          <p>Только так по-настоящему решаются проблемы</p>
+          <div class="relative mx-auto mt-10 h-[16.625rem] w-[20.4375rem]">
+            <img
+              src="./assets/img/шот-мозг.webp"
+              alt=""
+              class="relative z-10 h-full w-full"
+            />
+            <img
+              src="./assets/img/шот-мозг-зел.webp"
+              alt=""
+              class="absolute top-0 h-full w-full"
+            />
+            <img
+              src="./assets/img/шот-мозг-крас.webp"
+              alt=""
+              class="brain-pain absolute top-0 h-full w-full opacity-0"
+            />
+          </div>
+        </div>
+        <div
+          class="relative z-10 mx-auto -mt-[23.4375rem] flex w-[81.25rem] flex-col gap-4"
+        >
+          <div class="flex justify-between">
+            <div class="pain margin-bottom-16 margin-left-69">
+              <p>со сном</p>
+            </div>
+            <div class="pain pain-left margin-bottom-16">
+              <p>с организованностью</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="pain"><p>с прокрастинацией</p></div>
+            <div class="pain pain-left margin-right-107">
+              <p>с партнёром</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex">
+              <div class="pain margin-top-16"><p>я очень устаю</p></div>
+              <div class="pain margin-bottom-16 margin-left-30">
+                <p>с родными</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="pain pain-left margin-top-16">
+                <p>с одиночеством</p>
+              </div>
+              <div class="pain pain-left margin-left-60 margin-top-16">
+                <p>с деньгами</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="pain margin-top-16 margin-left-108">
+              <p>не люблю свою работу</p>
+            </div>
+            <div class="pain pain-left margin-bottom-16 margin-right-108">
+              <p>с вешностью</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="margin-top-24 flex">
+              <div class="pain"><p>всё зря</p></div>
+              <div class="pain margin-left-30">
+                <p>мне сложно фокусироваться</p>
+              </div>
+            </div>
+            <div class="margin-bottom-16 flex">
+              <div class="pain pain-left margin-top-8">
+                <p>мне нужен пинок на действия</p>
+              </div>
+              <div class="pain pain-left margin-left-30 margin-bottom-8">
+                <p>нет времени</p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto flex">
+            <div class="pain margin-top-16 margin-right-90">
+              <p>мои подчиненные не уважают меня</p>
+            </div>
+            <div class="margin-bottom-16 flex">
+              <div class="pain pain-left">
+                <p>я постоянно со всего сливаюсь</p>
+              </div>
+              <div class="pain pain-left margin-left-60">
+                <p>мои дети не любят меня</p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto flex">
+            <div class="pain margin-top-16">
+              <p>у меня всё равно ничего не получится</p>
+            </div>
+            <div class="pain pain-left margin-bottom-16 margin-left-60">
+              <p>я не знаю, что мне делать с жизнью</p>
+            </div>
+          </div>
+          <div class="mx-auto flex">
+            <div class="pain margin-top-16">
+              <p>я ничего не чувствую</p>
+            </div>
+            <div class="pain pain-left margin-left-60 margin-bottom-16">
+              <p>мне не хватает уверенности</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
