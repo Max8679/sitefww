@@ -692,14 +692,16 @@ h1 {
 @media (max-width: 28.125rem) {
   h1 {
     font-size: 4.375rem;
+    opacity: 0.8;
   }
 
   .subtitle {
     font-size: 1.125rem;
+    opacity: 1;
   }
 
   .regular {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -721,9 +723,19 @@ h1 {
   line-height: normal;
 }
 
-.pain-left {
+.pain-right {
   padding: 1.125rem 2.375rem 1.125rem 1.75rem;
   border-radius: 1.875rem 1.875rem 0rem 1.875rem;
+}
+
+@media (max-width: 28.125rem) {
+  .pain {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .pain-right {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
 }
 
 .absolute {
@@ -923,14 +935,6 @@ h1 {
   background-image: url('./assets/img/header.webp');
 }
 
-.bg-\[url\(\'\.\/assets\/img\/\448\43E\442 1-1\.png\'\)\] {
-  background-image: url('./assets/img/шот1-1.png');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/\448\43E\442 2-\444\43E\43D 1\.png\'\)\] {
-  background-image: url('./assets/img/шот2-фон1.png');
-}
-
 .bg-\[url\(\'\.\/assets\/img\/\448\43E\442 1-1\.webp\'\)\] {
   background-image: url('./assets/img/шот1-1.webp');
 }
@@ -939,8 +943,8 @@ h1 {
   background-image: url('./assets/img/шот2-фон1.webp');
 }
 
-.bg-\[length\:92\.5rem_45\.875rem\] {
-  background-size: 92.5rem 45.875rem;
+.bg-\[length\:92\.5rem_46\.975rem\] {
+  background-size: 92.5rem 46.975rem;
 }
 
 .bg-\[length\:92\.5rem_56\.675rem\] {
@@ -953,14 +957,6 @@ h1 {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-\[length\:1480px_59\.625rem\] {
-  background-size: 1480px 59.625rem;
-}
-
-.bg-\[length\:92\.5rem_46\.975rem\] {
-  background-size: 92.5rem 46.975rem;
 }
 
 .bg-top {
@@ -1019,10 +1015,6 @@ h1 {
   opacity: 0;
 }
 
-.opacity-55 {
-  opacity: 0.55;
-}
-
 .margin-top-16 {
   margin-top: 1rem;
 }
@@ -1071,6 +1063,10 @@ h1 {
   margin-right: 5.625rem;
 }
 
+.margin-top-8 {
+  margin-top: 0.5rem;
+}
+
 .pain-opacity {
   transition: opacity 0.3s ease;
   opacity: 1;
@@ -1079,4 +1075,158 @@ h1 {
 .pain-opacity-0 {
   transition: opacity 0.5s ease-in;
   opacity: 0%;
+}
+
+@media (max-width: 26.125rem) {
+  .mob\:pain {
+    padding: 1.125rem 1.75rem 1.125rem 2.375rem;
+    background-color: #626262;
+    border-radius: 1.875rem 1.875rem 1.875rem 0rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .mob\:pain p {
+    font-size: 1rem;
+    opacity: 0.73;
+    font-weight: 200;
+    color: white;
+    line-height: normal;
+  }
+
+  .mob\:pain-right {
+    padding: 1.125rem 2.375rem 1.125rem 1.75rem;
+    border-radius: 1.875rem 1.875rem 0rem 1.875rem;
+  }
+
+  @media (max-width: 28.125rem) {
+    .mob\:pain {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .mob\:pain-right {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+  }
+
+  .mob\:m-0 {
+    margin: 0px;
+  }
+
+  .mob\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mob\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .mob\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .mob\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .mob\:mt-\[1\.875rem\] {
+    margin-top: 1.875rem;
+  }
+
+  .mob\:hidden {
+    display: none;
+  }
+
+  .mob\:h-\[49\.6875rem\] {
+    height: 49.6875rem;
+  }
+
+  .mob\:w-\[26\.125rem\] {
+    width: 26.125rem;
+  }
+
+  .mob\:flex-col {
+    flex-direction: column;
+  }
+
+  .mob\:justify-center {
+    justify-content: center;
+  }
+
+  .mob\:justify-between {
+    justify-content: space-between;
+  }
+
+  .mob\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .mob\:self-end {
+    align-self: flex-end;
+  }
+
+  .mob\:bg-\[url\(\'\.\/assets\/img\/block-3-adaptation\.png\'\)\] {
+    background-image: url('./assets/img/block-3-adaptation.png');
+  }
+
+  .mob\:bg-\[url\(\'\.\/assets\/img\/mob-bg-1\.png\'\)\] {
+    background-image: url('./assets/img/mob-bg-1.png');
+  }
+
+  .mob\:bg-\[length\:28\.125rem_49\.6875rem\] {
+    background-size: 28.125rem 49.6875rem;
+  }
+
+  .mob\:bg-\[length\:28\.125rem_74\.6875rem\] {
+    background-size: 28.125rem 74.6875rem;
+  }
+
+  .mob\:p-0 {
+    padding: 0px;
+  }
+
+  .mob\:p-4 {
+    padding: 1rem;
+  }
+
+  .mob\:px-\[1\.3125rem\] {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+  }
+
+  .mob\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .mob\:margin-bottom-16 {
+    margin-bottom: 1rem;
+  }
+
+  .mob\:margin-top-8 {
+    margin-top: 0.5rem;
+  }
+
+  .mob\:margin-bottom-8 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mob\:margin-right-16 {
+    margin-right: 1rem;
+  }
+
+  .mob\:margin-top-8 {
+    margin-top: 0.5rem;
+  }
+
+  .mob\:margin-right-64 {
+    margin-right: 4rem;
+  }
+
+  .mob\:margin-right-8 {
+    margin-right: 0.5rem;
+  }
 }
