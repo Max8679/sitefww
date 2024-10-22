@@ -861,6 +861,18 @@ h1 {
   height: 100%;
 }
 
+.h-\[59\.625rem\] {
+  height: 59.625rem;
+}
+
+.h-\[56\.675rem\] {
+  height: 56.675rem;
+}
+
+.h-\[46\.975rem\] {
+  height: 46.975rem;
+}
+
 .w-\[20\.4375rem\] {
   width: 20.4375rem;
 }
@@ -884,6 +896,10 @@ h1 {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[92\.5rem\] {
+  width: 92.5rem;
 }
 
 .flex-row {
@@ -957,6 +973,10 @@ h1 {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-top {
@@ -1182,6 +1202,10 @@ h1 {
 
   .mob\:bg-\[length\:28\.125rem_74\.6875rem\] {
     background-size: 28.125rem 74.6875rem;
+  }
+
+  .mob\:bg-cover {
+    background-size: cover;
   }
 
   .mob\:p-0 {
