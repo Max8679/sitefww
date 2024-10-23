@@ -22,7 +22,7 @@
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
-        background-image: url("/assets/img/Шот.jpg");
+        background-image: url("./assets/img/Шот.jpg");
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
@@ -69,14 +69,16 @@
         </div>
       </section>
       <section
-        class="h-[56.675rem] bg-[url('./assets/img/шот2-фон1.webp')] bg-cover bg-no-repeat pt-[6.125rem]"
+        class="mob:h-auto mob:pt-10 mob:pb-8 h-[56.675rem] bg-[url('./assets/img/шот2-фон1.webp')] bg-cover bg-no-repeat pt-[6.125rem]"
       >
         <div>
           <div
-            class="small bg-lightGray mx-auto mb-[6.375rem] flex w-[31.25rem] flex-col items-center rounded-[1.875rem] py-[1.375rem]"
+            class="small bg-lightGray mob:w-[21.5625rem] mob:py-[0.875rem] mx-auto mb-[6.375rem] flex w-[31.25rem] flex-col items-center rounded-[1.875rem] py-[1.375rem]"
           >
             <p class="title">Напоминание</p>
-            <div class="my-[1.125rem] flex flex-col items-center">
+            <div
+              class="mob:my-[0.75rem] my-[1.125rem] flex flex-col items-center"
+            >
               <p>Нет слабых и сильных людей.</p>
               <p class="my-2 text-center">
                 Есть люди, которые научились работать <br />
@@ -84,48 +86,76 @@
               </p>
               <p>и все остальные.</p>
             </div>
-            <div class="bg-darkLiver mb-[1.125rem] h-[0.0625rem] w-full"></div>
+            <div
+              class="bg-darkLiver mob:mb-[0.75rem] mb-[1.125rem] h-[0.0625rem] w-full"
+            ></div>
             <a href="" class="link-blue block"><div>Принять</div></a>
           </div>
         </div>
-        <div class="flex">
-          <div class="h-[27.9375rem] w-[39.8125rem]">
+        <div class="mob:flex-col flex">
+          <div
+            class="mob:h-[10.5275rem] mob:w-[21.25rem] mob:mx-auto h-[27.9375rem] w-[46.813rem]"
+          >
             <img
+              loading="lazy"
               src="./assets/img/шот-надпись.webp"
-              class="w-full"
+              class="mob:hidden w-full"
+              alt="Шот Жизни"
+            />
+            <img
+              loading="lazy"
+              src="./assets/img/шот-надпись-моб2.webp"
+              class="mob:block hidden w-full"
               alt="Шот Жизни"
             />
           </div>
-          <div class="regular mb-[9.3125rem] mt-[6.45rem]">
-            <p class="-ml-[13.775rem] mb-[3.75rem]">
+          <div
+            class="regular mob:text-[1rem] mob:text-center mob:mt-[1.875rem] mob:mb-0 mb-[9.3125rem] mt-[6.95rem]"
+          >
+            <p class="mob:ml-0 mob:mb-[1rem] -ml-[13.775rem] mb-[3.95rem]">
               - это всё, что
-              <span class="regular-book">не объяснили вам родители,</span><br />
+              <span class="regular-book font-bold"
+                >не объяснили вам родители,</span
+              ><br />
               и чего
-              <span class="regular-book"
+              <span class="regular-book font-bold"
                 >не дала образовательная система —</span
               >
             </p>
-            <p class="-ml-[1.8438rem]">
+            <p class="mob:ml-0 -ml-[1.8438rem]">
               это
-              <span class="regular-book">азбука современного человека,</span>
-              <br />
-              выстраивающая в вас наиболее безболезненный <br />
-              <span class="ml-[0.4ch]">и результативный подход к жизни.</span>
+              <span class="regular-book font-bold"
+                >азбука современного человека,</span
+              >
+            </p>
+            <p class="mob:ml-0 mob:mt-[0.625rem] -ml-[1.8438rem]">
+              <span>выстраивающая в вас наиболее</span>
+              <span
+                class="mob:block mob:regular-book mob:font-bold inline-block"
+                >безболезненный</span
+              >
+              <span
+                class="mob:ml-[1.4ch] mob:block ml-[0.4ch] inline-block max-w-[37.6875rem]"
+                ><span class="mob:block mob:regular-book mob:font-bold"
+                  >и результативный</span
+                >
+                <span class="mob:block"> подход к жизни.</span></span
+              >
             </p>
           </div>
         </div>
       </section>
       <section
-        class="mob:py-6 mob:bg-[url('./assets/img/block-3-adaptation.webp')] mob:bg-cover mobh-[74.6875rem] bg-[url('./assets/img/block-3.webp')] bg-cover bg-no-repeat py-[1.3125rem]"
+        class="mob:py-6 mob:bg-[url('./assets/img/block-3-adaptation.webp')] mob:bg-cover bg-[url('./assets/img/block-3.webp')] bg-cover bg-no-repeat py-[1.3125rem]"
       >
         <div class="regular regular-book mx-auto text-center">
           <p class="mb-4">
             Мы научим вас <br />
-            <span class="regular font-normal opacity-95"
+            <span class="regular font-normal opacity-[0.93]"
               >понимать ваш мозг</span
             >
             и сделать его
-            <span class="regular font-normal opacity-95"
+            <span class="regular font-normal opacity-[0.93]"
               >своим другом, а не врагом.</span
             >
           </p>
