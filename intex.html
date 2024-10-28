@@ -22,7 +22,7 @@
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
-        background-image: url("./assets/img/Шот.jpg");
+        background-image: url("./assets/img/Group 7.png");
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
@@ -53,7 +53,7 @@
     </header>
     <main>
       <section
-        class="mob:bg-[url('./assets/img/mob-bg-1.webp')] mob:p-4 mob:h-[49.6875rem] h-[59.438rem] bg-[url('./assets/img/шот1-1.webp')] bg-cover bg-no-repeat"
+        class="mob:bg-[url('./assets/img/shot-1-block-ad-bg.webp')] mob:p-4 mob:h-[49.6875rem] h-[59.438rem] bg-[url('./assets/img/shot-1-block-bg.webp')] bg-cover bg-no-repeat"
       >
         <div
           class="mob:m-0 mob:p-0 -mt-[6.8125rem] ml-[5.8125rem] w-fit pt-[1.375rem]"
@@ -69,8 +69,9 @@
         </div>
       </section>
       <section
-        class="mob:h-auto mob:pt-10 mob:pb-8 h-[56.675rem] bg-[url('./assets/img/шот2-фон1.webp')] bg-cover bg-no-repeat pt-[6.125rem]"
+        class="mob:h-auto mob:pt-10 mob:pb-8 mob:bg-[url('./assets/img/shot-2-block-ad-bg.webp')] h-[56.675rem] bg-[url('./assets/img/shot-2-block-bg.webp')] bg-cover bg-no-repeat pt-[6.125rem]"
       >
+        <h2 class="sr-only">Что такое шот жизни?</h2>
         <div>
           <div
             class="small bg-lightGray mob:w-[21.5625rem] mob:py-[0.875rem] mx-auto mb-[6.375rem] flex w-[31.25rem] flex-col items-center rounded-[1.875rem] py-[1.375rem]"
@@ -98,13 +99,13 @@
           >
             <img
               loading="lazy"
-              src="./assets/img/шот-надпись.webp"
+              src="./assets/img/shot.webp"
               class="mob:hidden w-full"
               alt="Шот Жизни"
             />
             <img
               loading="lazy"
-              src="./assets/img/шот-надпись-моб2.webp"
+              src="./assets/img/shot-mob.webp"
               class="mob:block hidden w-full"
               alt="Шот Жизни"
             />
@@ -146,8 +147,9 @@
         </div>
       </section>
       <section
-        class="mob:py-6 mob:bg-[url('./assets/img/block-3-adaptation.webp')] mob:bg-cover bg-[url('./assets/img/block-3.webp')] bg-cover bg-no-repeat py-[1.3125rem]"
+        class="mob:py-6 mob:bg-[url('./assets/img/shot-3-block-ad-bg.webp')] mob:bg-cover bg-[url('./assets/img/shot-3-block-bg.webp')] bg-cover bg-no-repeat py-[1.3125rem]"
       >
+        <h2 class="sr-only">Чему научим</h2>
         <div class="regular regular-book mx-auto text-center">
           <p class="mb-4">
             Мы научим вас <br />
@@ -162,17 +164,17 @@
           <p>Только так по-настоящему решаются проблемы</p>
           <div class="relative mx-auto mt-10 h-[16.625rem] w-[20.4375rem]">
             <img
-              src="./assets/img/шот-мозг.webp"
+              src="./assets/img/brain.webp"
               alt=""
               class="relative z-10 h-full w-full"
             />
             <img
-              src="./assets/img/шот-мозг-зел.webp"
+              src="./assets/img/brain-green.webp"
               alt=""
               class="absolute top-0 h-full w-full"
             />
             <img
-              src="./assets/img/шот-мозг-крас.webp"
+              src="./assets/img/brain-red.webp"
               alt=""
               class="brain-pain absolute top-0 h-full w-full opacity-0"
             />
@@ -185,16 +187,16 @@
             <div
               class="pain margin-bottom-16 margin-left-69 mob:m-0 mob:margin-right-16"
             >
-              <p>со сном</p>
+              <p aria-hidden="true">со сном</p>
             </div>
             <div class="pain pain-right margin-bottom-16 mob:m-0">
-              <p>с организованностью</p>
+              <p aria-hidden="true">с организованностью</p>
             </div>
           </div>
           <div class="flex justify-between">
-            <div class="pain"><p>с прокрастинацией</p></div>
+            <div class="pain"><p aria-hidden="true">с прокрастинацией</p></div>
             <div class="pain pain-right margin-right-107 mob:m-0">
-              <p>с партнёром</p>
+              <p aria-hidden="true">с партнёром</p>
             </div>
           </div>
           <div
@@ -204,22 +206,22 @@
               <div
                 class="pain margin-top-16 mob:margin-top-8 mob:margin-right-64"
               >
-                <p>я очень устаю</p>
+                <p aria-hidden="true">я очень устаю</p>
               </div>
               <div
                 class="pain margin-bottom-16 margin-left-30 mob:pain-right mob:m-0"
               >
-                <p>с родными</p>
+                <p aria-hidden="true">с родными</p>
               </div>
             </div>
             <div class="flex">
               <div
                 class="pain pain-right margin-top-16 mob:pain mob:m-0 mob:margin-right-64"
               >
-                <p>с одиночеством</p>
+                <p aria-hidden="true">с одиночеством</p>
               </div>
               <div class="pain pain-right margin-left-60 margin-top-16 mob:m-0">
-                <p>с деньгами</p>
+                <p aria-hidden="true">с деньгами</p>
               </div>
             </div>
           </div>
@@ -227,67 +229,379 @@
             <div
               class="pain margin-top-16 margin-left-108 mob:ml-0 mob:margin-right-8"
             >
-              <p>не люблю свою работу</p>
+              <p aria-hidden="true">не люблю свою работу</p>
             </div>
             <div
               class="pain pain-right margin-bottom-16 mob:mr-0 margin-right-108"
             >
-              <p>с вешностью</p>
+              <p aria-hidden="true">с вешностью</p>
             </div>
           </div>
           <div class="mob:flex-col flex justify-between">
             <div class="margin-top-24 mob:m-0 mob:justify-between flex">
-              <div class="pain"><p>всё зря</p></div>
+              <div class="pain"><p aria-hidden="true">всё зря</p></div>
               <div class="pain margin-left-30 mob:m-0 mob:pain-right">
-                <p>мне сложно фокусироваться</p>
+                <p aria-hidden="true">мне сложно фокусироваться</p>
               </div>
             </div>
             <div class="margin-bottom-16 mob:m-0 mob:flex-col flex">
               <div class="pain pain-right mob:pain margin-top-8">
-                <p>мне нужен пинок на действия</p>
+                <p aria-hidden="true">мне нужен пинок на действия</p>
               </div>
               <div
                 class="pain pain-right margin-left-30 margin-bottom-8 mob:self-end mob:m-0 mob:margin-top-8"
               >
-                <p>нет времени</p>
+                <p aria-hidden="true">нет времени</p>
               </div>
             </div>
           </div>
           <div class="mob:flex-col mob:m-0 mx-auto flex">
             <div class="pain margin-top-16 margin-right-90 mob:m-0">
-              <p>мои подчиненные не уважают меня</p>
+              <p aria-hidden="true">мои подчиненные не уважают меня</p>
             </div>
             <div
               class="margin-bottom-16 mob:m-0 mob:margin-top-8 mob:flex-col flex"
             >
               <div class="pain pain-right mob:pain">
-                <p>я постоянно со всего сливаюсь</p>
+                <p aria-hidden="true">я постоянно со всего сливаюсь</p>
               </div>
               <div
                 class="pain pain-right mob:m-0 mob:self-end mob:margin-top-8 margin-left-60"
               >
-                <p>мои дети не любят меня</p>
+                <p aria-hidden="true">мои дети не любят меня</p>
               </div>
             </div>
           </div>
           <div class="mob:flex-col mob:m-0 mx-auto flex">
             <div class="pain margin-top-16 mob:m-0 mob:margin-bottom-8">
-              <p>у меня всё равно ничего не получится</p>
+              <p aria-hidden="true">у меня всё равно ничего не получится</p>
             </div>
             <div
               class="pain pain-right margin-bottom-16 margin-left-60 mob:self-end mob:ml-0"
             >
-              <p>я не знаю, что мне делать с жизнью</p>
+              <p aria-hidden="true">я не знаю, что мне делать с жизнью</p>
             </div>
           </div>
           <div class="mob:flex-col mob:m-0 mx-auto flex">
             <div class="pain margin-top-16 mob:m-0 mob:margin-bottom-8">
-              <p>я ничего не чувствую</p>
+              <p aria-hidden="true">я ничего не чувствую</p>
             </div>
             <div
               class="pain pain-right margin-left-60 mob:self-end mob:m-0 margin-bottom-16"
             >
-              <p>мне не хватает уверенности</p>
+              <p aria-hidden="true">мне не хватает уверенности</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative">
+        <div class="">
+          <div
+            class="bg-[url('./assets/img/shot-4-block-bg.webp')] bg-cover bg-no-repeat pb-[1.6406rem] pl-[3.625rem] pr-[4.5rem] pt-[2.625rem]"
+          >
+            <div class="mb-8 h-[11.1719rem] w-[37.5rem]">
+              <h2 class="sr-only">Как это происходит</h2>
+              <img
+                src="assets/img/shot-5-block-title.webp"
+                class="w-full"
+                alt=""
+              />
+            </div>
+            <div class="absolute right-[22.313rem] top-[30.0364rem]">
+              <blockquote class="message-block">
+                <div class="comment-block sigrun-block">
+                  <div
+                    class="comment box-shadow w-[29.0625rem] overflow-hidden rounded-[1.8125rem]"
+                  >
+                    <div class="comment-header">
+                      <div class="comment-header-name">
+                        <img
+                          src="./assets/img/messages-icon.svg"
+                          draggable="false"
+                          alt=""
+                          class="h-[2.6875rem] w-[2.75rem]"
+                        />
+                        <cite class="author uppercase not-italic">SOFIA</cite>
+                      </div>
+                      <p class="author">Now</p>
+                    </div>
+                    <div class="comment-content">
+                      <p class="quote">
+                        Твой комтур - это мостик между тобой<br />
+                        и твоим мозгом. Он научит тебя вести<br />
+                        внутренний диалог и разбирать стрессовые<br />
+                        ситуации из твоей жизни, поможет в них<br />
+                        ориентироваться.
+                      </p>
+                      <p class="quote">
+                        Ты сможешь писать комтуру в любое время<br />
+                        и проводить с ним один звонок в месяц.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/sofia-shot-radial.webp"
+                  draggable="false"
+                  alt=""
+                  class="sofia-icon"
+                />
+              </blockquote>
+            </div>
+            <ul class="regular flex flex-col gap-5 text-[1.25rem] opacity-100">
+              <li class="flex items-center gap-8">
+                <div class="h-10 w-9">
+                  <img
+                    class="opacity-100"
+                    src="./assets/img/numbers/1.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>
+                    Ты попадаешь в
+                    <span class="regular-book">закрытое комьюнити Шота.</span
+                    ><br />
+                    Это разрешает вопросы одиночества незнания, где встретить
+                    людей,<br />
+                    подходящих тебе по уровню развития и увлечениям.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-8">
+                <div class="h-10 w-9">
+                  <img
+                    class="opacity-100"
+                    src="./assets/img/numbers/2.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>
+                    Ты получаешь
+                    <span class="regular-book">более 5 серий в месяц,</span> по
+                    которым ты выполняешь задания.
+                  </p>
+                </div>
+              </li>
+              <li class="mb-[16.25rem] flex items-center gap-8">
+                <div class="h-10 w-9">
+                  <img
+                    class="opacity-100"
+                    src="./assets/img/numbers/3.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>
+                    У тебя есть комтур, твой
+                    <span class="regular-book"
+                      >личный куратор, который заменит тебе психолога.</span
+                    ><br />
+                    Комтур даёт тебе задания, помогает тебе раскрыться и
+                    сформулировать волнующий тебя вопросы.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-8">
+                <div class="relative top-[-0.6864rem] h-10 w-9">
+                  <img
+                    class="opacity-100"
+                    src="./assets/img/numbers/4.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>Франц Вертфоллен - писатель.</p>
+                  <p class="my-5">
+                    Каждую неделю проходят
+                    <span class="regular-book">субботние перформансы -</span
+                    ><br />
+                    актерские читки его книг, что заменят вам походы на концерты
+                    и в кино.
+                  </p>
+                  <p>
+                    Сначала - яркое чтение, затем - психологический разбор
+                    героев, сцен. <br />На примерах его героев ты лучше
+                    <span class="regular-book">поймешь себя</span> и
+                    <span class="regular-book"
+                      >научишься анализировать людей.</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-center gap-8">
+                <div class="h-10 w-9">
+                  <img
+                    class="opacity-100"
+                    src="./assets/img/numbers/5.png"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  Раз в месяц на читках проходят
+                  <span class="regular-book">проживания</span>.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-[url('./assets/img/shot-5-block-bg.webp')] bg-cover bg-no-repeat px-[4.125rem] py-8"
+          >
+            <div class="flex">
+              <div
+                class="relative mr-[2.625rem] mt-[2.875rem] h-[22.375rem] w-[22.375rem] shrink-0"
+              >
+                <img
+                  src="./assets/img/zue-shot-radial.webp"
+                  draggable="false"
+                  class="h-full w-full"
+                  alt=""
+                />
+              </div>
+              <ul class="relative w-full">
+                <li>
+                  <blockquote class="message-block">
+                    <div class="comment-block sigrun-block">
+                      <div
+                        class="comment box-shadow w-[31.313rem] overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SIGRUN</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content">
+                          <p class="quote">
+                            Проживания - самая резко меняющая людей <br />
+                            часть Шота. Тебя, как героя книги, ставят в сценку
+                            <br />с другими игроками и задают вам цели: <br />
+                            убедить другого человека, очаровать, <br />s
+                            разрешить конфликт.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </blockquote>
+                </li>
+                <li
+                  class="absolute bottom-0 left-[17.375rem] right-0 top-[14.2462rem] m-0"
+                >
+                  <blockquote class="message-block">
+                    <div class="comment-block sigrun-block h-fit">
+                      <div
+                        class="comment box-shadow w-[31.875rem] overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SIGRUN</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content">
+                          <p class="quote">
+                            Ты делаешь всё, что можешь, чтобы получить нужный
+                            исход.
+                          </p>
+                          <p class="quote">
+                            И как все люди - в чём-то фейлишь. После игры Франц
+                            Вертфоллен даёт рентген-разбор твоих механизмов
+                            психики: почему тебя не послушали, почему на твою
+                            сторону не встали, какие <br />
+                            паттерны поведения портят тебе отношения и тормозят
+                            карьеру в жизни.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </blockquote>
+                </li>
+                <li class="-ml-[17rem] mt-[14.338rem]">
+                  <blockquote class="message-block">
+                    <div class="comment-block sigrun-block">
+                      <div
+                        class="comment box-shadow w-[31.313rem] overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SIGRUN</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content">
+                          <p class="quote">
+                            Это потрясает, как ледяной душ. Ты можешь увидеть
+                            себя чужими глазами, с высоты птичьего полёта, и в
+                            безопасных условиях разобраться, каким ты хочешь
+                            стать по-настоящему.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+            <div class="mx-6 mt-[8.9375rem] flex items-center gap-5">
+              <div>
+                <h2 class="sr-only">Освоение профессий</h2>
+                <div>
+                  <img
+                    src="./assets/img/shot-4-block-title.webp"
+                    class="h-[11.8125rem] w-[28.3125rem]"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[1.25rem] font-light leading-[1.22] opacity-[73%]"
+                >
+                  мы учим (по желанию) шотовцев
+                </p>
+                <p
+                  class="mb-6 text-[2rem] font-light leading-[1.22] opacity-[73%]"
+                >
+                  журналистике, маркетингу,<br />
+                  программированию, дизайну, фотографии,
+                </p>
+                <p
+                  class="text-[1.25rem] font-light leading-[140%] opacity-[73%]"
+                >
+                  учим, как <span class="regular-book">не зажиматься</span> на
+                  новую информацию,<br />
+                  как <span class="regular-book">быстрее</span> её осваивать,
+                  как быть <span class="regular-book">открытее</span> с
+                  людьми... <br />даем
+                  <span class="regular-book">много полезных навыков</span>
+                  каждому волонтеру.
+                </p>
+              </div>
             </div>
           </div>
         </div>
