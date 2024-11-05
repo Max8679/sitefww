@@ -1512,6 +1512,10 @@ h1 {
   opacity: 93;
 }
 
+.opacity-\[0\.73\] {
+  opacity: 0.73;
+}
+
 .margin-top-16 {
   margin-top: 1rem;
 }
