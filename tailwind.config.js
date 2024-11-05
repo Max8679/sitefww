@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     screens: {
       mob: { max: "28.125rem" },
+      desk: { min: "28.1875rem" },
     },
     colors: {
       black: "#000000",

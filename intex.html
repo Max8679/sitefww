@@ -22,18 +22,26 @@
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
-        background-image: url("./assets/img/Group 7.png");
+        /* Mobile layout by default */
+        background-image: url("./assets/img/макет-моб.png");
+      }
+      /* Desktop */
+      @media (min-width: 960px) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("./assets/img/Шот.png");
+        }
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
     <script src="../node_modules/pixel-glass/script.js"></script>
     <script src="./script.js"></script>
-    <title>Document</title>
+    <title>Шот Жизни</title>
   </head>
   <body>
     <header class="mob:hidden flex h-[5.75rem] flex-col text-white">
       <nav
-        class="flex justify-end bg-[url('./assets/img/header.webp')] bg-cover px-[7rem] pb-[2.9375rem] pt-[1.375rem]"
+        class="flex items-center justify-end bg-[url('./assets/img/header.webp')] bg-[size:100%_100%] px-[7rem] pb-[2.9375rem] pt-[1.375rem]"
       >
         <ul class="link flex flex-row gap-[2.6875rem]">
           <li class="menu-item">
@@ -53,7 +61,7 @@
     </header>
     <main>
       <section
-        class="mob:bg-[url('./assets/img/shot-1-block-ad-bg.webp')] mob:p-4 mob:h-[49.6875rem] h-[59.438rem] bg-[url('./assets/img/shot-1-block-bg.webp')] bg-cover bg-no-repeat"
+        class="mob:bg-[url('./assets/img/shot-1-block-ad-bg.webp')] mob:p-4 mob:h-[49.6875rem] h-[60.338rem] bg-[url('./assets/img/shot-1-block-bg.webp')] bg-cover bg-no-repeat"
       >
         <div
           class="mob:m-0 mob:p-0 -mt-[6.8125rem] ml-[5.8125rem] w-fit pt-[1.375rem]"
@@ -69,7 +77,7 @@
         </div>
       </section>
       <section
-        class="mob:h-auto mob:pt-10 mob:pb-8 mob:bg-[url('./assets/img/shot-2-block-ad-bg.webp')] h-[56.675rem] bg-[url('./assets/img/shot-2-block-bg.webp')] bg-cover bg-no-repeat pt-[6.125rem]"
+        class="mob:h-auto mob:pt-10 mob:pb-8 mob:bg-[url('./assets/img/shot-2-block-ad-bg.webp')] h-[56.675rem] bg-[url('./assets/img/shot-2-block-bg.webp')] bg-[size:100%_100%] bg-no-repeat pt-[6.125rem]"
       >
         <h2 class="sr-only">Что такое шот жизни?</h2>
         <div>
@@ -111,21 +119,21 @@
             />
           </div>
           <div
-            class="regular mob:text-[1rem] mob:text-center mob:mt-[1.875rem] mob:mb-0 mb-[9.3125rem] mt-[6.95rem]"
+            class="regular-22 mob:text-[1rem] mob:text-center mob:mt-[1.875rem] mob:mb-0 mb-[9.3125rem] mt-[6.95rem]"
           >
             <p class="mob:ml-0 mob:mb-[1rem] -ml-[13.775rem] mb-[3.95rem]">
               - это всё, что
-              <span class="regular-book font-bold"
+              <span class="regular-book mob:font-bold"
                 >не объяснили вам родители,</span
               ><br />
               и чего
-              <span class="regular-book font-bold"
+              <span class="regular-book mob:font-bold"
                 >не дала образовательная система —</span
               >
             </p>
             <p class="mob:ml-0 -ml-[1.8438rem]">
               это
-              <span class="regular-book font-bold"
+              <span class="regular-book mob:font-bold"
                 >азбука современного человека,</span
               >
             </p>
@@ -136,7 +144,7 @@
                 >безболезненный</span
               >
               <span
-                class="mob:ml-[1.4ch] mob:block ml-[0.4ch] inline-block max-w-[37.6875rem]"
+                class="mob:ml-[1.1ch] mob:block ml-[0.4ch] inline-block max-w-[37.6875rem]"
                 ><span class="mob:block mob:regular-book mob:font-bold"
                   >и результативный</span
                 >
@@ -150,15 +158,20 @@
         class="mob:py-6 mob:bg-[url('./assets/img/shot-3-block-ad-bg.webp')] mob:bg-cover bg-[url('./assets/img/shot-3-block-bg.webp')] bg-cover bg-no-repeat py-[1.3125rem]"
       >
         <h2 class="sr-only">Чему научим</h2>
-        <div class="regular regular-book mx-auto text-center">
+        <div
+          class="regular-22 mob:text-[1.125rem] regular-book mx-auto text-center leading-[1.25]"
+        >
           <p class="mb-4">
             Мы научим вас <br />
-            <span class="regular font-normal opacity-[0.93]"
+            <span
+              class="regular-book mob:text-[1.125rem] font-bold opacity-[0.93]"
               >понимать ваш мозг</span
             >
             и сделать его
-            <span class="regular font-normal opacity-[0.93]"
-              >своим другом, а не врагом.</span
+            <span
+              class="regular-book mob:text-[1.125rem] font-bold opacity-[0.93]"
+              >своим <br class="desk:hidden" />
+              другом, а не врагом.</span
             >
           </p>
           <p>Только так по-настоящему решаются проблемы</p>
@@ -209,7 +222,7 @@
                 <p aria-hidden="true">я очень устаю</p>
               </div>
               <div
-                class="pain margin-bottom-16 margin-left-30 mob:pain-right mob:m-0"
+                class="pain margin-bottom-16 margin-left-30 mob:px-[2.0625rem] mob:pain-right mob:m-0"
               >
                 <p aria-hidden="true">с родными</p>
               </div>
@@ -232,7 +245,7 @@
               <p aria-hidden="true">не люблю свою работу</p>
             </div>
             <div
-              class="pain pain-right margin-bottom-16 mob:mr-0 margin-right-108"
+              class="pain pain-right margin-bottom-16 mob:px-[2.0625rem] mob:mr-0 margin-right-108"
             >
               <p aria-hidden="true">с вешностью</p>
             </div>
@@ -294,63 +307,28 @@
           </div>
         </div>
       </section>
-      <section class="relative">
+      <section
+        class="mob:pt-[4.1475rem] mob:px-0 mob:pb-0 mob:bg-[url('./assets/img/shot-4.1-block-ad-bg.webp'),_url('./assets/img/shot-4.3-block-ad-bg.webp')] mob:bg-[length:28.125rem_46.25rem,_28.125rem_28.325rem] mob:bg-[position:center_top_0rem,center_top_94.85rem] relative bg-[url('./assets/img/shot-4-block-bg.webp')] bg-cover bg-no-repeat pb-[1.6406rem] pl-[3.625rem] pr-[4.5rem] pt-[2.625rem]"
+      >
         <div class="">
-          <div
-            class="bg-[url('./assets/img/shot-4-block-bg.webp')] bg-cover bg-no-repeat pb-[1.6406rem] pl-[3.625rem] pr-[4.5rem] pt-[2.625rem]"
-          >
-            <div class="mb-8 h-[11.1719rem] w-[37.5rem]">
+          <div>
+            <div
+              class="mob:h-[6.5169rem] mob:ml-6 mob:w-[21.875rem] mob:mb-0 mb-8 h-[11.1719rem] w-[37.5rem]"
+            >
               <h2 class="sr-only">Как это происходит</h2>
               <img
-                src="assets/img/shot-5-block-title.webp"
+                src="assets/img/shot-4-block-title.webp"
                 class="w-full"
                 alt=""
               />
             </div>
-            <div class="absolute right-[22.313rem] top-[30.0364rem]">
-              <blockquote class="message-block">
-                <div class="comment-block sigrun-block">
-                  <div
-                    class="comment box-shadow w-[29.0625rem] overflow-hidden rounded-[1.8125rem]"
-                  >
-                    <div class="comment-header">
-                      <div class="comment-header-name">
-                        <img
-                          src="./assets/img/messages-icon.svg"
-                          draggable="false"
-                          alt=""
-                          class="h-[2.6875rem] w-[2.75rem]"
-                        />
-                        <cite class="author uppercase not-italic">SOFIA</cite>
-                      </div>
-                      <p class="author">Now</p>
-                    </div>
-                    <div class="comment-content">
-                      <p class="quote">
-                        Твой комтур - это мостик между тобой<br />
-                        и твоим мозгом. Он научит тебя вести<br />
-                        внутренний диалог и разбирать стрессовые<br />
-                        ситуации из твоей жизни, поможет в них<br />
-                        ориентироваться.
-                      </p>
-                      <p class="quote">
-                        Ты сможешь писать комтуру в любое время<br />
-                        и проводить с ним один звонок в месяц.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src="./assets/img/sofia-shot-radial.webp"
-                  draggable="false"
-                  alt=""
-                  class="sofia-icon"
-                />
-              </blockquote>
-            </div>
-            <ul class="regular flex flex-col gap-5 text-[1.25rem] opacity-100">
-              <li class="flex items-center gap-8">
-                <div class="h-10 w-9">
+            <ul
+              class="regular mob:text-[1rem] mob:mt-[6.25rem] mob:gap-0 flex flex-col gap-5 text-[1.25rem] opacity-100"
+            >
+              <li
+                class="mob:ml-10 mob:mr-[1.8125rem] mob:mb-[1.125rem] desk:gap-8 flex items-center"
+              >
+                <div class="mob:hidden h-10 w-9">
                   <img
                     class="opacity-100"
                     src="./assets/img/numbers/1.png"
@@ -359,251 +337,714 @@
                 </div>
                 <div>
                   <p>
-                    Ты попадаешь в
-                    <span class="regular-book">закрытое комьюнити Шота.</span
-                    ><br />
-                    Это разрешает вопросы одиночества незнания, где встретить
-                    людей,<br />
-                    подходящих тебе по уровню развития и увлечениям.
+                    Ты попадаешь в <br class="desk:hidden" />
+                    <span class="regular-book">закрытое комьюнити Шота.</span>
+                  </p>
+                  <p class="mob:mt-[2ch]">
+                    Это разрешает <br class="desk:hidden" />
+                    вопросы одиночества, <br class="desk:hidden" />
+                    незнания,
+                    <span class="mob:regular-book"
+                      >где встретить людей,<br />
+                      подходящих тебе <br class="desk:hidden" />
+                      по уровню развития <br class="desk:hidden" />
+                      и увлечениям.</span
+                    >
                   </p>
                 </div>
               </li>
-              <li class="flex items-center gap-8">
-                <div class="h-10 w-9">
+              <li
+                class="desk:gap-8 mob:justify-end desk:items-center mob:mb-[0.875rem] relative flex"
+              >
+                <div
+                  class="mob:absolute mob:left-0 mob:ml-6 mob:w-[11.4375rem] mob:h-[17rem] h-10 w-9 shrink-0"
+                >
                   <img
-                    class="opacity-100"
+                    class="mob:hidden opacity-100"
                     src="./assets/img/numbers/2.png"
                     alt=""
                   />
-                </div>
-                <div>
-                  <p>
-                    Ты получаешь
-                    <span class="regular-book">более 5 серий в месяц,</span> по
-                    которым ты выполняешь задания.
-                  </p>
-                </div>
-              </li>
-              <li class="mb-[16.25rem] flex items-center gap-8">
-                <div class="h-10 w-9">
                   <img
-                    class="opacity-100"
-                    src="./assets/img/numbers/3.png"
+                    src="./assets/img/shot-phone.webp"
+                    class="desk:hidden h-full w-full"
                     alt=""
                   />
                 </div>
-                <div>
-                  <p>
-                    У тебя есть комтур, твой
-                    <span class="regular-book"
-                      >личный куратор, который заменит тебе психолога.</span
-                    ><br />
-                    Комтур даёт тебе задания, помогает тебе раскрыться и
-                    сформулировать волнующий тебя вопросы.
+                <div class="mob:mr-9 mob:mt-[9.625rem] mob:mb-[0.625rem]">
+                  <p class="mob:text-right">
+                    Ты получаешь <br class="desk:hidden" />
+                    <span class="desk:regular-book whitespace-nowrap"
+                      >более 5 серий в месяц,</span
+                    >
+                    <br class="desk:hidden" />
+                    по которым <br class="desk:hidden" />
+                    ты выполняешь <br class="desk:hidden" />
+                    задания.
                   </p>
                 </div>
               </li>
-              <li class="flex items-center gap-8">
-                <div class="relative top-[-0.6864rem] h-10 w-9">
+              <li
+                class="mob:mb-0 mob:bg-[url('./assets/img/shot-4.2-block-ad-bg.webp')] mob:pb-[6.931rem] mob:bg-no-repeat mob:bg-[size:100%_100%] relative mb-[16.25rem]"
+              >
+                <div class="mob:justify-center flex items-center gap-8">
+                  <div class="mob:hidden h-10 w-9">
+                    <img
+                      class="opacity-100"
+                      src="./assets/img/numbers/3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="mob:text-center regular mob:text-[1.125rem] mob:mt-[7.988rem]"
+                  >
+                    <p style="opacity: 1">
+                      У тебя есть комтур, <br class="desk:hidden" />
+                      твой
+                      <span class="regular-book"
+                        >личный куратор, который <br class="desk:hidden" />
+                        <span class="mob:uppercase"
+                          >заменит тебе психолога.</span
+                        ></span
+                      >
+                    </p>
+                    <p class="mob:mt-[1ch]" style="opacity: 1">
+                      Комтур даёт тебе задания, <br class="desk:hidden" />
+                      помогает тебе раскрыться и <br class="desk:hidden" />
+                      сформулировать волнующие <br class="desk:hidden" />
+                      тебя вопросы.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="desk:absolute mob:hidden right-[17.8125rem] top-[5rem]"
+                >
+                  <blockquote class="message-block">
+                    <div class="comment-block desk:z-0 relative">
+                      <div
+                        class="comment box-shadow w-[29.0625rem] overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SOFIA</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content">
+                          <p class="quote" style="opacity: 1">
+                            Твой комтур - это мостик между тобой<br />
+                            и твоим мозгом. Он научит тебя вести<br />
+                            внутренний диалог и разбирать стрессовые<br />
+                            ситуации из твоей жизни, поможет в них<br />
+                            ориентироваться.
+                          </p>
+                          <p class="quote" style="opacity: 1">
+                            Ты сможешь писать комтуру в любое время<br />
+                            и проводить с ним один звонок в месяц.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="./assets/img/sofia-shot-radial.webp"
+                      draggable="false"
+                      alt=""
+                      class="sofia-icon mob:-z-10 z-10"
+                    />
+                  </blockquote>
+                </div>
+                <div class="desk:hidden ml-10 mt-10">
+                  <blockquote class="message-block">
+                    <div class="comment-block sigrun-block">
+                      <div
+                        class="comment box-shadow w-fit overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="mob:h-[2.125rem] mob:w-[2.1875rem] h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SOFIA</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content pr-[3.5625rem]">
+                          <p class="quote" style="opacity: 1">
+                            Твой комтур - это мостик <br />
+                            между тобой и твоим мозгом.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="./assets/img/sofia-shot-radial.webp"
+                      draggable="false"
+                      alt=""
+                      class="sofia-icon"
+                    />
+                  </blockquote>
+                </div>
+                <div
+                  class="desk:hidden ml-[3.5rem] mr-[1.875rem] mt-[1.5625rem]"
+                >
+                  <blockquote class="message-block">
+                    <div class="comment-block sigrun-block">
+                      <div
+                        class="comment box-shadow overflow-hidden rounded-[1.8125rem]"
+                      >
+                        <div class="comment-header">
+                          <div class="comment-header-name">
+                            <img
+                              src="./assets/img/messages-icon.svg"
+                              draggable="false"
+                              alt=""
+                              class="mob:h-[2.125rem] mob:w-[2.1875rem] h-[2.6875rem] w-[2.75rem]"
+                            />
+                            <cite class="author uppercase not-italic"
+                              >SOFIA</cite
+                            >
+                          </div>
+                          <p class="author">Now</p>
+                        </div>
+                        <div class="comment-content">
+                          <p class="quote" style="opacity: 1">
+                            Он научит тебя вести внутренний диалог и разбирать
+                            стрессовые ситуации из твоей жизни, поможет в них
+                            ориентироваться. <br />
+                            Ты сможешь писать комтуру в любое время и проводить
+                            с ним один звонок в месяц.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </li>
+              <li
+                class="mob:pt-20 mob:pb-[0.1875rem] mob:bg-no-repeat mob:bg-cover flex items-center gap-8"
+              >
+                <div class="mob:hidden relative top-[-0.6864rem] h-10 w-9">
                   <img
                     class="opacity-100"
                     src="./assets/img/numbers/4.png"
                     alt=""
                   />
                 </div>
-                <div>
+                <div
+                  class="mob:bg-[url('./assets/img/block-4.3-underline.webp')] mob:bg-[length:100vw_12.375rem] mob:bg-no-repeat mob:bg-[center_top_-0.65rem] mob:mx-8"
+                >
                   <p>Франц Вертфоллен - писатель.</p>
-                  <p class="my-5">
-                    Каждую неделю проходят
+                  <p class="mob:my-4 my-5">
+                    Каждую неделю проходят <br class="desk:hidden" />
                     <span class="regular-book">субботние перформансы -</span
                     ><br />
-                    актерские читки его книг, что заменят вам походы на концерты
-                    и в кино.
+                    актерские читки его книг, что заменят
+                    <br class="desk:hidden" />
+                    вам походы на концерты и в кино.
+                  </p>
+                  <p class="mob:mb-4">
+                    Сначала - яркое чтение, затем - психологический разбор
+                    героев, сцен.
                   </p>
                   <p>
-                    Сначала - яркое чтение, затем - психологический разбор
-                    героев, сцен. <br />На примерах его героев ты лучше
-                    <span class="regular-book">поймешь себя</span> и
-                    <span class="regular-book"
-                      >научишься анализировать людей.</span
+                    На примерах его героев ты лучше <br class="desk:hidden" />
+                    <span class="desk:regular-book">поймешь себя</span> и
+                    <span class="desk:regular-book"
+                      >научишься <br class="desk:hidden" />
+                      анализировать людей.</span
                     >
                   </p>
                 </div>
               </li>
-              <li class="flex items-center gap-8">
-                <div class="h-10 w-9">
+              <li
+                class="mob:pb-[5.475rem] mob:justify-end mob:top-8 mob:relative flex items-center gap-8"
+              >
+                <div class="mob:hidden h-10 w-9">
                   <img
                     class="opacity-100"
                     src="./assets/img/numbers/5.png"
                     alt=""
                   />
                 </div>
-                <p>
-                  Раз в месяц на читках проходят
-                  <span class="regular-book">проживания</span>.
+                <p class="mob:mr-[5.125rem]">
+                  Раз в месяц на читках <br class="desk:hidden" />
+                  проходят <span class="regular-book">проживания</span>.
                 </p>
               </li>
             </ul>
           </div>
-          <div
-            class="bg-[url('./assets/img/shot-5-block-bg.webp')] bg-cover bg-no-repeat px-[4.125rem] py-8"
-          >
-            <div class="flex">
-              <div
-                class="relative mr-[2.625rem] mt-[2.875rem] h-[22.375rem] w-[22.375rem] shrink-0"
-              >
-                <img
-                  src="./assets/img/zue-shot-radial.webp"
-                  draggable="false"
-                  class="h-full w-full"
-                  alt=""
-                />
-              </div>
-              <ul class="relative w-full">
-                <li>
-                  <blockquote class="message-block">
-                    <div class="comment-block sigrun-block">
-                      <div
-                        class="comment box-shadow w-[31.313rem] overflow-hidden rounded-[1.8125rem]"
-                      >
-                        <div class="comment-header">
-                          <div class="comment-header-name">
-                            <img
-                              src="./assets/img/messages-icon.svg"
-                              draggable="false"
-                              alt=""
-                              class="h-[2.6875rem] w-[2.75rem]"
-                            />
-                            <cite class="author uppercase not-italic"
-                              >SIGRUN</cite
-                            >
-                          </div>
-                          <p class="author">Now</p>
-                        </div>
-                        <div class="comment-content">
-                          <p class="quote">
-                            Проживания - самая резко меняющая людей <br />
-                            часть Шота. Тебя, как героя книги, ставят в сценку
-                            <br />с другими игроками и задают вам цели: <br />
-                            убедить другого человека, очаровать, <br />s
-                            разрешить конфликт.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </blockquote>
-                </li>
-                <li
-                  class="absolute bottom-0 left-[17.375rem] right-0 top-[14.2462rem] m-0"
-                >
-                  <blockquote class="message-block">
-                    <div class="comment-block sigrun-block h-fit">
-                      <div
-                        class="comment box-shadow w-[31.875rem] overflow-hidden rounded-[1.8125rem]"
-                      >
-                        <div class="comment-header">
-                          <div class="comment-header-name">
-                            <img
-                              src="./assets/img/messages-icon.svg"
-                              draggable="false"
-                              alt=""
-                              class="h-[2.6875rem] w-[2.75rem]"
-                            />
-                            <cite class="author uppercase not-italic"
-                              >SIGRUN</cite
-                            >
-                          </div>
-                          <p class="author">Now</p>
-                        </div>
-                        <div class="comment-content">
-                          <p class="quote">
-                            Ты делаешь всё, что можешь, чтобы получить нужный
-                            исход.
-                          </p>
-                          <p class="quote">
-                            И как все люди - в чём-то фейлишь. После игры Франц
-                            Вертфоллен даёт рентген-разбор твоих механизмов
-                            психики: почему тебя не послушали, почему на твою
-                            сторону не встали, какие <br />
-                            паттерны поведения портят тебе отношения и тормозят
-                            карьеру в жизни.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </blockquote>
-                </li>
-                <li class="-ml-[17rem] mt-[14.338rem]">
-                  <blockquote class="message-block">
-                    <div class="comment-block sigrun-block">
-                      <div
-                        class="comment box-shadow w-[31.313rem] overflow-hidden rounded-[1.8125rem]"
-                      >
-                        <div class="comment-header">
-                          <div class="comment-header-name">
-                            <img
-                              src="./assets/img/messages-icon.svg"
-                              draggable="false"
-                              alt=""
-                              class="h-[2.6875rem] w-[2.75rem]"
-                            />
-                            <cite class="author uppercase not-italic"
-                              >SIGRUN</cite
-                            >
-                          </div>
-                          <p class="author">Now</p>
-                        </div>
-                        <div class="comment-content">
-                          <p class="quote">
-                            Это потрясает, как ледяной душ. Ты можешь увидеть
-                            себя чужими глазами, с высоты птичьего полёта, и в
-                            безопасных условиях разобраться, каким ты хочешь
-                            стать по-настоящему.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </blockquote>
-                </li>
-              </ul>
+        </div>
+      </section>
+      <section
+        class="mob:bg-[url('./assets/img/shot-5-block-ad-bg.webp')] mob:bg-[center_top_-0.3rem] mob:bg-[size:100%_63.1%] mob:py-0 desk:px-[4.125rem] bg-[url('./assets/img/shot-5-block-bg.webp')] bg-cover bg-no-repeat pb-16 pt-8 leading-[1.20]"
+      >
+        <div>
+          <div class="mob:flex-col mob:px-8 flex">
+            <div
+              class="mob:h-[16.875rem] mob:w-[16.875rem] mob:m-0 relative mr-[2.625rem] mt-[2.875rem] h-[22.375rem] w-[22.375rem] shrink-0"
+            >
+              <img
+                src="./assets/img/zue-shot-radial.webp"
+                draggable="false"
+                class="h-full w-full"
+                alt=""
+              />
             </div>
-            <div class="mx-6 mt-[8.9375rem] flex items-center gap-5">
-              <div>
+            <ul class="mob:pb-[1.4744rem] relative w-full">
+              <li>
+                <blockquote class="message-block mob:ml-6 mob:mt-2 relative">
+                  <div
+                    class="desk:hidden absolute -top-[5.375rem] right-[0.375rem] z-10 h-[8rem] w-[8rem]"
+                  >
+                    <img src="./assets/img/shot-!!.webp" alt="" />
+                  </div>
+                  <div class="comment-block sigrun-block relative z-0">
+                    <div
+                      class="comment box-shadow mob:w-fit w-[31.313rem] overflow-hidden rounded-[1.8125rem]"
+                    >
+                      <div class="comment-header">
+                        <div class="comment-header-name">
+                          <img
+                            src="./assets/img/messages-icon.svg"
+                            draggable="false"
+                            alt=""
+                            class="mob:w-[2.1875rem] mob:h-[2.125rem] h-[2.6875rem] w-[2.75rem]"
+                          />
+                          <cite class="author uppercase not-italic">ЗУИ</cite>
+                        </div>
+                        <p class="author">Now</p>
+                      </div>
+                      <div class="comment-content">
+                        <p class="quote" style="opacity: 1">
+                          Проживания - самая резко меняющая
+                          <br class="desk:hidden" />
+                          людей <br class="mob:hidden" />
+                          часть Шота. Тебя, как героя книги,
+                          <br class="desk:hidden" />
+                          ставят в сценку <br class="mob:hidden" />с другими
+                          игроками и <br class="desk:hidden" />
+                          задают вам цели: <br class="mob:hidden" />
+                          убедить другого <br class="desk:hidden" />
+                          человека, очаровать, <br class="mob:hidden" />
+                          разрешить конфликт.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+              </li>
+              <li
+                class="desk:left-[17.375rem] desk:absolute desk:top-[14.2462rem] bottom-0 right-0 m-0"
+              >
+                <blockquote class="desk:message-block">
+                  <div class="desk:comment-block desk:sigrun-block h-fit">
+                    <div
+                      class="desk:comment desk:box-shadow desk:rounded-[1.8125rem] mob:w-fit w-[31.875rem] overflow-hidden"
+                    >
+                      <div class="mob:hidden comment-header">
+                        <div class="comment-header-name">
+                          <img
+                            src="./assets/img/messages-icon.svg"
+                            draggable="false"
+                            alt=""
+                            class="h-[2.6875rem] w-[2.75rem]"
+                          />
+                          <cite class="author uppercase not-italic">ЗУИ</cite>
+                        </div>
+                        <p class="author">Now</p>
+                      </div>
+                      <div
+                        class="desk:comment-content mob:text-[1rem] mob:bg-[url('./assets/img/block-5.1-underline.webp')] mob:bg-no-repeat mob:bg-[length:100vw_4.6875rem] mob:bg-[center_top_2.388rem] mob:font-light mob:opacity-75 mob:my-8"
+                      >
+                        <p class="desk:quote" style="opacity: 1">
+                          Ты делаешь всё, что можешь,
+                          <br class="desk:hidden" />
+                          чтобы получить нужный исход.
+                        </p>
+                        <p class="desk:quote" style="opacity: 1">
+                          <span class="mob:my-4 mob:inline-block"
+                            >И как все люди - в чём-то фейлишь.</span
+                          >
+                          <br class="desk:hidden" />
+                          После игры Франц Вертфоллен даёт
+                          <br class="desk:hidden" />
+                          <span class="mob:regular-book"
+                            >рентген-разбор твоих механизмов психики:</span
+                          >
+                          <br class="desk:hidden" />
+                          почему тебя не послушали, <br class="desk:hidden" />
+                          почему на твою сторону не встали,
+                          <span class="mob:regular-book"
+                            >какие <br />
+                            паттерны поведения портят тебе отношения
+                            <br class="desk:hidden" />
+                            и тормозят карьеру в жизни.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+              </li>
+              <li class="desk:-ml-[17rem] desk:mt-[14.338rem] ml-6">
+                <blockquote class="message-block">
+                  <div class="comment-block sigrun-block">
+                    <div
+                      class="comment box-shadow w-fit overflow-hidden rounded-[1.8125rem]"
+                    >
+                      <div class="comment-header">
+                        <div class="comment-header-name">
+                          <img
+                            src="./assets/img/messages-icon.svg"
+                            draggable="false"
+                            alt=""
+                            class="mob:w-[2.1875rem] mob:h-[2.125rem] h-[2.6875rem] w-[2.75rem]"
+                          />
+                          <cite class="author uppercase not-italic">ЗУИ</cite>
+                        </div>
+                        <p class="author">Now</p>
+                      </div>
+                      <div class="comment-content">
+                        <p class="quote" style="opacity: 1">
+                          Это потрясает, как ледяной душ.
+                          <br class="desk:hidden" />
+                          Ты можешь <br class="mob:hidden" />
+                          увидеть себя чужими глазами,
+                          <br class="desk:hidden" />
+                          с высоты птичьего <br class="mob:hidden" />
+                          полёта, и в безопасных
+                          <br class="desk:hidden" />
+                          условиях разобраться, <br class="mob:hidden" />
+                          каким ты хочешь<br class="desk:hidden" />
+                          стать по-настоящему.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="mob:bg-[url('./assets/img/shot-5.2-block-ad-bg.webp')] mob:bg-no-repeat mob:bg-[size:100%_100%] mob:mt-[0.825rem]"
+          >
+            <div
+              class="desk:mx-6 desk:mt-[7.938rem] mob:mx-4 mob:h-[35.5rem] desk:items-center desk:gap-5 mob:flex-col flex"
+            >
+              <div class="">
                 <h2 class="sr-only">Освоение профессий</h2>
                 <div>
                   <img
-                    src="./assets/img/shot-4-block-title.webp"
-                    class="h-[11.8125rem] w-[28.3125rem]"
+                    src="./assets/img/shot-5-block-title.webp"
+                    class="mob:w-[19.0625rem] mob:h-[7.9375rem] h-[11.8125rem] w-[28.3125rem]"
                     alt=""
                   />
                 </div>
               </div>
               <div>
-                <p
-                  class="text-[1.25rem] font-light leading-[1.22] opacity-[73%]"
-                >
-                  мы учим (по желанию) шотовцев
-                </p>
-                <p
-                  class="mb-6 text-[2rem] font-light leading-[1.22] opacity-[73%]"
-                >
-                  журналистике, маркетингу,<br />
-                  программированию, дизайну, фотографии,
-                </p>
-                <p
-                  class="text-[1.25rem] font-light leading-[140%] opacity-[73%]"
-                >
-                  учим, как <span class="regular-book">не зажиматься</span> на
-                  новую информацию,<br />
-                  как <span class="regular-book">быстрее</span> её осваивать,
-                  как быть <span class="regular-book">открытее</span> с
-                  людьми... <br />даем
-                  <span class="regular-book">много полезных навыков</span>
-                  каждому волонтеру.
-                </p>
+                <div class="mob:mx-6">
+                  <p
+                    class="mob:text-[1rem] text-[1.25rem] font-light leading-[1.22] opacity-[73%]"
+                  >
+                    мы учим (по желанию) шотовцев
+                  </p>
+                  <p
+                    class="mob:text-[1.25rem] mb-6 text-[2rem] font-light leading-[1.22] opacity-[73%]"
+                  >
+                    журналистике, маркетингу,<br />
+                    программированию, <br class="desk:hidden" />
+                    дизайну, фотографии,
+                  </p>
+                </div>
+                <div class="mob:flex mob:justify-end relative">
+                  <div
+                    class="desk:hidden absolute -left-[1rem] h-[20.375rem] w-[13.9375rem]"
+                  >
+                    <img
+                      src="./assets/img/shot-5-block-work-photo.webp"
+                      alt=""
+                      class="h-full w-full"
+                    />
+                  </div>
+                  <div
+                    class="mob:text-right mob:mt-6 mob:text-[1rem] text-[1.25rem] font-light leading-[140%] opacity-[73%]"
+                  >
+                    <p>
+                      учим, <br class="desk:hidden" />
+                      как <span class="regular-book">не зажиматься</span>
+                      <br class="desk:hidden" />
+                      на новую информацию,<br />
+                      как <span class="regular-book">быстрее</span> её
+                      осваивать,
+                      <br class="desk:hidden" />
+                      как быть <span class="regular-book">открытее</span>
+                      <br class="desk:hidden" />
+                      с людьми...
+                    </p>
+                    <p class="mob:mt-[2ch]">
+                      даем
+                      <span class="regular-book"
+                        >много <br class="desk:hidden" />
+                        полезных навыков</span
+                      >
+                      <br class="desk:hidden" />
+                      каждому волонтеру.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section
+        class="mob:bg-[url('./assets/img/shot-6-block-ad-bg.webp')] desk:bg-[url('./assets/img/shot-6-block-bg.webp')] desk:pt-[6rem] desk:pb-28 mob:pt-7 mob:-mt-[0.1875rem] mob:pb-[9.099rem] mob:bg-[size:100%_100.3%] bg-cover bg-no-repeat"
+      >
+        <h2 class="sr-only">Хорошее окружение</h2>
+        <ul>
+          <li class="desk:mb-[1.6875rem] relative">
+            <blockquote
+              class="message-block desk:ml-[21.1875rem] mob:mx-[1.7188rem] mob:mt-4 relative z-10"
+            >
+              <div class="comment-block sigrun-block">
+                <div
+                  class="comment box-shadow overflow-hidden rounded-[1.8125rem]"
+                >
+                  <div class="comment-header">
+                    <div class="comment-header-name">
+                      <img
+                        src="./assets/img/messages-icon.svg"
+                        draggable="false"
+                        alt=""
+                        class="mob:w-[2.1875rem] mob:h-[2.125rem] h-[2.6875rem] w-[2.75rem]"
+                      />
+                      <cite class="author uppercase not-italic">ВИКТОРИЯ</cite>
+                    </div>
+                    <p class="author">Now</p>
+                  </div>
+                  <div class="comment-content">
+                    <p class="quote" style="opacity: 1">
+                      И очень важная вещь — ты получаешь хорошее
+                      <br class="mob:hidden" />
+                      окружение. Окружение, бросающее тебе вызов,
+                      <br />
+                      но и поддерживающее тебя.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+            <div
+              class="mob:-mt-[3.9375rem] desk:top-0 desk:absolute mob:justify-end mob:w-full mob:z-10 relative z-0 flex"
+            >
+              <div
+                class="mob:w-[17.25rem] mob:h-[23.625rem] h-[28.6875rem] w-[28.6875rem]"
+              >
+                <img
+                  src="./assets/img/block-6-bika-yurii-.webp"
+                  class="desk:hidden h-full w-full"
+                  alt=""
+                />
+                <img
+                  src="./assets/img/shot-6-block-victoria-aleksey.png"
+                  alt=""
+                  class="mob:hidden h-full w-full"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="mob:-mt-4 desk:hidden">
+            <blockquote class="message-block mob:ml-[3.6875rem]">
+              <div class="comment-block sigrun-block">
+                <div
+                  class="comment box-shadow overflow-hidden rounded-[1.8125rem]"
+                >
+                  <div class="comment-header">
+                    <div class="comment-header-name">
+                      <img
+                        src="./assets/img/messages-icon.svg"
+                        draggable="false"
+                        alt=""
+                        class="mob:w-[2.1875rem] mob:h-[2.125rem] h-[2.6875rem] w-[2.75rem]"
+                      />
+                      <cite class="author uppercase not-italic">ЮРИЙ</cite>
+                    </div>
+                    <p class="author">Now</p>
+                  </div>
+                  <div class="comment-content">
+                    <p class="quote" style="opacity: 1">
+                      Правильное окружение — это то, чего не
+                      <br class="desk:hidden" />
+                      хватает стольким людям для изменений.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+          </li>
+          <li class="relative">
+            <blockquote
+              class="message-block desk:mr-[20.625rem] desk:flex desk:justify-end mob:mx-[1.7813rem] mob:mt-8 relative z-0"
+            >
+              <div class="comment-block sigrun-block">
+                <div
+                  class="comment box-shadow overflow-hidden rounded-[1.8125rem]"
+                >
+                  <div class="comment-header">
+                    <div class="comment-header-name">
+                      <img
+                        src="./assets/img/messages-icon.svg"
+                        draggable="false"
+                        alt=""
+                        class="mob:w-[2.1875rem] mob:h-[2.125rem] h-[2.6875rem] w-[2.75rem]"
+                      />
+                      <cite class="author uppercase not-italic">ЮРИЙ</cite>
+                    </div>
+                    <p class="author">Now</p>
+                  </div>
+                  <div class="comment-content">
+                    <p class="quote mob:hidden" style="opacity: 1">
+                      Правильное окружение — это то, чего не хватает <br />
+                      стольким людям для изменений.
+                    </p>
+                    <p class="quote" style="opacity: 1">
+                      Оно не гладит тебя по головке — “карАлева”,
+                      <br />
+                      это неглупые люди, которые будут видеть тебя <br />
+                      со всеми твоими недостатками — это страшно, <br />
+                      но необходимо. Потому что только так ты <br />
+                      перестаешь прятать от себя свои слабости и <br />
+                      начинаешь их исправлять
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+            <div class="mob:hidden desk:top-12 desk:right-0 absolute z-10 flex">
+              <div class="h-[20.875rem] w-[24.375rem]">
+                <img
+                  src="./assets/img/shot-6-block-yuriy-victoria.png"
+                  alt=""
+                  class="h-full w-full"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section
+        class="mob:pt-16 desk:pl-8 mob:bg-[url('./assets/img/shot-7-block-ad-bg.webp')] mob:bg-[size:100%_100.3%] mob:pb-[9.75rem] desk:bg-[size:100%_100%] relative bg-[url('./assets/img/shot-7-block-bg.webp')] bg-cover bg-no-repeat pb-[11.0625rem] pt-[7.125rem]"
+      >
+        <h2 class="sr-only">Бонус: бесплатный доступ к книге месяца</h2>
+        <div
+          class="mob:w-[18.75rem] mob:h-[20.5625rem] desk:left-[24.625rem] mob:-top-[7.625rem] mob:right-0 absolute top-0 z-10 h-[30.4375rem] w-[31.5625rem]"
+        >
+          <img
+            src="./assets/img/shot-7-block-bonus-book-ad.png"
+            class="desk:hidden h-full w-full"
+            alt=""
+          />
+          <img
+            src="./assets/img/shot-7-block-bonus-book.png"
+            class="mob:hidden h-full w-full"
+            alt=""
+          />
+        </div>
+        <div
+          class="mob:w-[19.6875rem] mob:h-[9.625rem] h-[11.9375rem] w-[24.125rem]"
+        >
+          <img
+            src="./assets/img/shot-7-block-bonus.webp"
+            class="h-full w-full"
+            alt=""
+          />
+        </div>
+        <div
+          class="regular mob:-mt-3 desk:text-[1.125rem] ml-8 font-light leading-[1.20]"
+        >
+          <p style="opacity: 0.93">
+            Если в тебе есть хоть немного <br />
+            восприимчивости к искусству, <br />
+            это будет твой самый вкусный десерт.
+          </p>
+          <p class="mt-2" style="opacity: 0.93">
+            Читки станут событием, <br class="desk:hidden" />
+            которое ждёшь всю неделю. <br />
+            Приятно жить в предвкушении.
+          </p>
+        </div>
+      </section>
+      <section
+        class="mob:bg-[url('./assets/img/shot-8-block-ad-bg.webp')] mob:pb-16 bg-[url('./assets/img/shot-8-block-bg.webp')] bg-cover bg-no-repeat"
+      >
+        <h2 class="sr-only">Кто такой Франц Вертфоллен</h2>
+        <div class="mob:w-[20.625rem] mob:h-[7rem] pl-3">
+          <img src="./assets/img/shot-8-block-title.webp" alt="" />
+        </div>
+        <div class="mob:ml-8 mob:-mt-[0.1875rem] desk:pl-12 font-light">
+          <p class="regular desk:text-[1.125rem] leading-[1.15]">
+            ведущий Шота Жизни
+            <br class="desk:hidden" />
+            <span class="regular-book">
+              <span class="mob:hidden">-</span> писатель и тонкий
+              психолог.</span
+            >
+          </p>
+          <p class="regular desk:text-[1.125rem] mob:mb-6 mt-6 leading-[1.15]">
+            Он учился во Франции,
+            <span class="regular-book"
+              >специализируясь <br class="desk:hidden" />
+              на <br class="mob:hidden" />
+              коммуникации между людьми <br class="desk:hidden" />
+              и их восприятии информации.</span
+            >
+            <br />
+            (Университет Поля Верлена, <br class="desk:hidden" />
+            Communication and information <br class="mob:hidden" />
+            Sciences)
+          </p>
+          <div class="mob:w-[23.75rem] mob:h-[22.0625rem] mob:mx-[0.1875rem]">
+            <img
+              src="./assets/img/shot-8-block-senor.webp"
+              class="desk:hidden h-full w-full"
+              alt=""
+            />
+          </div>
+          <p class="regular desk:text-[1.125rem] mt-6 leading-[1.15]">
+            Работал в
+            <span class="regular-book"
+              >штаб квартире <br class="desk:hidden" />
+              UNESCO</span
+            >
+            в Париже <br />
+            и на центральном <br class="desk:hidden" />
+            телевидении Казахстана. <br />
+            В 23 года
+            <span class="regular-book"
+              >открыл свою <br class="desk:hidden" />
+              актёрскую школу,</span
+            >
+            <br />
+            В 25 <span class="regular-book">издал первую книгу </span
+            ><br class="desk:hidden" />
+            “Автопортрет”.
+          </p>
+          <p class="regular desk:text-[1.125rem] mt-6 leading-[1.15]">
+            Сейчас живёт и работает <br class="desk:hidden" />
+            в Лос-Анджелее.
+          </p>
         </div>
       </section>
     </main>
