@@ -140,7 +140,7 @@
     line-height: 1.15;
   }
 
-  .regular-book {
+  .stolzl-book {
     font-family: "Stolzl Book";
   }
 
@@ -190,6 +190,7 @@
     border-radius: 1.875rem 1.875rem 1.875rem 0rem;
     width: fit-content;
     height: fit-content;
+    position: relative;
   }
 
   .pain p {
@@ -205,11 +206,79 @@
     border-radius: 1.875rem 1.875rem 0rem 1.875rem;
   }
 
+  .pain-white {
+    background-color: #e8eae7;
+  }
+
+  .pain-white p {
+    color: #303030;
+    font-size: 1.25rem;
+  }
+
   .message-block {
     display: flex;
     flex-direction: row;
     column-gap: -14rem;
     position: relative;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .brain-red {
+    left: -6%;
+    top: -3%;
+  }
+
+  .brain-green {
+    right: -6%;
+    top: -3%;
+  }
+
+  .pain:hover:nth-child(odd) {
+    animation: slide-left 1s ease-in-out infinite alternate;
+  }
+
+  .pain:hover:nth-child(even) {
+    animation: slide-right 1s ease-in-out infinite alternate;
+  }
+
+  .pain:hover {
+    background-color: #7e82f6;
+  }
+
+  .pain-white:hover:nth-child(odd) {
+    animation: slide-left 1s ease-in-out infinite alternate;
+  }
+
+  .pain-white:hover:nth-child(even) {
+    animation: slide-right 1s ease-in-out infinite alternate;
+  }
+
+  .pain-white:hover {
+    background-color: #7e82f6;
+  }
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-4px);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(4px);
+    }
   }
 
   .comment-block {
@@ -287,6 +356,15 @@
       border-radius: 1.875rem 3.175rem 0rem 1.875rem;
     }
 
+    .pain-white {
+      padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .pain-white p {
+      font-family: "Stolzl Book";
+      font-size: 1.125rem;
+    }
+
     .comment-content {
       padding: 1rem 1.25rem 1.5rem 1.25rem;
     }
@@ -326,6 +404,10 @@
     margin-top: 1.5rem;
   }
 
+  .margin-top-48 {
+    margin-top: 3rem;
+  }
+
   .margin-top-8 {
     margin-top: 0.5rem;
   }
@@ -358,12 +440,20 @@
     margin-left: 1.875rem;
   }
 
+  .margin-left-32 {
+    margin-left: 2rem;
+  }
+
   .margin-right-90 {
     margin-right: 5.625rem;
   }
 
   .margin-left-16 {
     margin-left: 1rem;
+  }
+
+  .margin-left-13 {
+    margin-left: 0.8125rem;
   }
 
   .margin-right-16 {
@@ -384,11 +474,11 @@
 }
 
 .pain-opacity {
-  transition: opacity 0.3s ease;
-  opacity: 1;
+  transition: opacity 1s ease;
+  opacity: 0.8;
 }
 
 .pain-opacity-0 {
-  transition: opacity 0.5s ease-in;
+  transition: opacity 1.3s ease-in;
   opacity: 0%;
 }

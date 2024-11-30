@@ -13,6 +13,7 @@ module.exports = {
       darkLiver: "#4E4F4D",
       lightGray: "rgba(213, 213, 212, 0.99)", //#D5D5D4
       graniteGray: "#626262",
+      zincDust: "#5B5B5B",
     },
     extend: {},
   },
