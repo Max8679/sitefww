@@ -2099,6 +2099,10 @@ header {
   opacity: 55%;
 }
 
+.opacity-\[80\%\] {
+  opacity: 80%;
+}
+
 .opacity-\[73\%\] {
   opacity: 73%;
 }
@@ -2420,6 +2424,10 @@ header {
 
   .mob\:top-\[9\.6864rem\] {
     top: 9.6864rem;
+  }
+
+  .mob\:top-\[10\.186rem\] {
+    top: 10.186rem;
   }
 
   .mob\:-z-10 {
