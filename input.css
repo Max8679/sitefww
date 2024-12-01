@@ -239,48 +239,6 @@
     top: -3%;
   }
 
-  .pain:hover:nth-child(odd) {
-    animation: slide-left 1s ease-in-out infinite alternate;
-  }
-
-  .pain:hover:nth-child(even) {
-    animation: slide-right 1s ease-in-out infinite alternate;
-  }
-
-  .pain:hover {
-    background-color: #7e82f6;
-  }
-
-  .pain-white:hover:nth-child(odd) {
-    animation: slide-left 1s ease-in-out infinite alternate;
-  }
-
-  .pain-white:hover:nth-child(even) {
-    animation: slide-right 1s ease-in-out infinite alternate;
-  }
-
-  .pain-white:hover {
-    background-color: #7e82f6;
-  }
-
-  @keyframes slide-right {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-4px);
-    }
-  }
-
-  @keyframes slide-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(4px);
-    }
-  }
-
   .comment-block {
     display: flex;
   }
@@ -343,6 +301,50 @@
     margin-left: 24.5rem;
     margin-top: 3.8rem;
     position: absolute;
+  }
+
+  @media (min-width: 28.1875rem) {
+    .pain:hover:nth-child(odd) {
+      animation: slide-left 1s ease-in-out infinite alternate;
+    }
+
+    .pain:hover:nth-child(even) {
+      animation: slide-right 1s ease-in-out infinite alternate;
+    }
+
+    .pain:hover {
+      background-color: #7e82f6;
+    }
+
+    .pain-white:hover:nth-child(odd) {
+      animation: slide-left 1s ease-in-out infinite alternate;
+    }
+
+    .pain-white:hover:nth-child(even) {
+      animation: slide-right 1s ease-in-out infinite alternate;
+    }
+
+    .pain-white:hover {
+      background-color: #7e82f6;
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-4px);
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(4px);
+      }
+    }
   }
 
   @media (max-width: 28.125rem) {

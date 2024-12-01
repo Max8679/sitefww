@@ -812,50 +812,6 @@ header {
   top: -3%;
 }
 
-.pain:hover:nth-child(odd) {
-  animation: slide-left 1s ease-in-out infinite alternate;
-}
-
-.pain:hover:nth-child(even) {
-  animation: slide-right 1s ease-in-out infinite alternate;
-}
-
-.pain:hover {
-  background-color: #7e82f6;
-}
-
-.pain-white:hover:nth-child(odd) {
-  animation: slide-left 1s ease-in-out infinite alternate;
-}
-
-.pain-white:hover:nth-child(even) {
-  animation: slide-right 1s ease-in-out infinite alternate;
-}
-
-.pain-white:hover {
-  background-color: #7e82f6;
-}
-
-@keyframes slide-right {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-4px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(4px);
-  }
-}
-
 .comment-block {
   display: flex;
 }
@@ -918,6 +874,52 @@ header {
   margin-left: 24.5rem;
   margin-top: 3.8rem;
   position: absolute;
+}
+
+@media (min-width: 28.1875rem) {
+  .pain:hover:nth-child(odd) {
+    animation: slide-left 1s ease-in-out infinite alternate;
+  }
+
+  .pain:hover:nth-child(even) {
+    animation: slide-right 1s ease-in-out infinite alternate;
+  }
+
+  .pain:hover {
+    background-color: #7e82f6;
+  }
+
+  .pain-white:hover:nth-child(odd) {
+    animation: slide-left 1s ease-in-out infinite alternate;
+  }
+
+  .pain-white:hover:nth-child(even) {
+    animation: slide-right 1s ease-in-out infinite alternate;
+  }
+
+  .pain-white:hover {
+    background-color: #7e82f6;
+  }
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-4px);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(4px);
+    }
+  }
 }
 
 @media (max-width: 28.125rem) {
@@ -1756,44 +1758,44 @@ header {
   background-color: rgba(213, 213, 212, 0.99);
 }
 
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-1-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-1-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-10-block-ad-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-10-block-ad-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-2-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-2-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-3-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-3-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-4-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-4-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-5-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-5-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-7-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-7-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-8-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-8-block-bg.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/Shot\/shot-9-block-bg\.webp\'\)\] {
+  background-image: url('./assets/img/Shot/shot-9-block-bg.webp');
+}
+
 .bg-\[url\(\'\.\/assets\/img\/header\.webp\'\)\] {
   background-image: url('./assets/img/header.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-1-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-1-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-10-block-ad-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-10-block-ad-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-2-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-2-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-3-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-3-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-4-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-4-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-5-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-5-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-7-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-7-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-8-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-8-block-bg.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/shot-9-block-bg\.webp\'\)\] {
-  background-image: url('./assets/img/shot-9-block-bg.webp');
 }
 
 .bg-\[size\:100\%_100\%\] {
@@ -2216,16 +2218,102 @@ header {
     border-radius: 1.875rem 1.875rem 0rem 1.875rem;
   }
 
-  .mob\:pain:hover:nth-child(odd) {
-    animation: slide-left 1s ease-in-out infinite alternate;
-  }
+  @media (min-width: 28.1875rem) {
+    .mob\:pain:hover:nth-child(odd) {
+      animation: slide-left 1s ease-in-out infinite alternate;
+    }
 
-  .mob\:pain:hover:nth-child(even) {
-    animation: slide-right 1s ease-in-out infinite alternate;
-  }
+    .mob\:pain:hover:nth-child(even) {
+      animation: slide-right 1s ease-in-out infinite alternate;
+    }
 
-  .mob\:pain:hover {
-    background-color: #7e82f6;
+    .mob\:pain:hover {
+      background-color: #7e82f6;
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-4px);
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(4px);
+      }
+    }
+
+    .mob\:pain:hover:nth-child(odd) {
+      animation: slide-left 1s ease-in-out infinite alternate;
+    }
+
+    .mob\:pain:hover:nth-child(even) {
+      animation: slide-right 1s ease-in-out infinite alternate;
+    }
+
+    .mob\:pain:hover {
+      background-color: #7e82f6;
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-4px);
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(4px);
+      }
+    }
+
+    .mob\:pain:hover:nth-child(odd) {
+      animation: slide-left 1s ease-in-out infinite alternate;
+    }
+
+    .mob\:pain:hover:nth-child(even) {
+      animation: slide-right 1s ease-in-out infinite alternate;
+    }
+
+    .mob\:pain:hover {
+      background-color: #7e82f6;
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-4px);
+      }
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(4px);
+      }
+    }
   }
 
   @media (max-width: 28.125rem) {
@@ -2849,60 +2937,60 @@ header {
     background-color: rgba(213,213,212,0.3);
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-1-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-1-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-1-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-1-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-10-block-bg-ad\.webp\'\)\] {
-    background-image: url('./assets/img/shot-10-block-bg-ad.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-10-block-bg-ad\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-10-block-bg-ad.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-2-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-2-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-2-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-2-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-3-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-3-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-3-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-3-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-4\.1-block-ad-bg\.webp\'\)\2c _url\(\'\.\/assets\/img\/shot-4\.3-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-4.1-block-ad-bg.webp'), url('./assets/img/shot-4.3-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-4\.1-block-ad-bg\.webp\'\)\2c _url\(\'\.\/assets\/img\/Shot\/shot-4\.3-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-4.1-block-ad-bg.webp'), url('./assets/img/Shot/shot-4.3-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-4\.2-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-4.2-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-4\.2-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-4.2-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-4\.3-block-underline\.webp\'\)\] {
-    background-image: url('./assets/img/shot-4.3-block-underline.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-4\.3-block-underline\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-4.3-block-underline.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-5-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-5-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-5-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-5-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-5\.1-block-underline\.webp\'\)\] {
-    background-image: url('./assets/img/shot-5.1-block-underline.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-5\.1-block-underline\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-5.1-block-underline.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-5\.2-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-5.2-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-5\.2-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-5.2-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-6-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-6-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-6-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-6-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-7-block-ad-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-7-block-ad-bg.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-7-block-ad-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-7-block-ad-bg.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-8-block-bg-ad\.webp\'\)\] {
-    background-image: url('./assets/img/shot-8-block-bg-ad.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-8-block-bg-ad\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-8-block-bg-ad.webp');
   }
 
-  .mob\:bg-\[url\(\'\.\/assets\/img\/shot-9-block-bg-ad\.webp\'\)\] {
-    background-image: url('./assets/img/shot-9-block-bg-ad.webp');
+  .mob\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-9-block-bg-ad\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-9-block-bg-ad.webp');
   }
 
   .mob\:bg-\[length\:100vw_12\.375rem\] {
@@ -2915,10 +3003,6 @@ header {
 
   .mob\:bg-\[length\:28\.125rem_46\.25rem\2c _28\.125rem_28\.325rem\] {
     background-size: 28.125rem 46.25rem, 28.125rem 28.325rem;
-  }
-
-  .mob\:bg-\[size\:100\%_100\%\] {
-    background-size: 100% 100%;
   }
 
   .mob\:bg-\[size\:100\%_100\.2\%\] {
@@ -2945,10 +3029,6 @@ header {
     background-size: cover;
   }
 
-  .mob\:bg-\[length\:28\.125rem_46\.25rem\2c _28\.125rem_94\.85rem\] {
-    background-size: 28.125rem 46.25rem, 28.125rem 94.85rem;
-  }
-
   .mob\:bg-\[center_top_-0\.2rem\] {
     background-position: center top -0.2rem;
   }
@@ -2971,10 +3051,6 @@ header {
 
   .mob\:bg-\[position\:center_top_-1rem\] {
     background-position: center top -1rem;
-  }
-
-  .mob\:bg-\[position\:center_top_0rem\2c center_top_94\.85rem\] {
-    background-position: center top 0rem,center top 94.85rem;
   }
 
   .mob\:bg-\[position\:center_top_0rem\2c center_top_94\.9rem\] {
@@ -3315,8 +3391,8 @@ header {
     border-radius: 1.8125rem;
   }
 
-  .desk\:bg-\[url\(\'\.\/assets\/img\/shot-6-block-bg\.webp\'\)\] {
-    background-image: url('./assets/img/shot-6-block-bg.webp');
+  .desk\:bg-\[url\(\'\.\/assets\/img\/Shot\/shot-6-block-bg\.webp\'\)\] {
+    background-image: url('./assets/img/Shot/shot-6-block-bg.webp');
   }
 
   .desk\:bg-\[size\:100\%_100\.3\%\] {
