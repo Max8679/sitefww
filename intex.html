@@ -19,23 +19,8 @@
           font-size: calc(-0.0022271714922048997rem + 3.5634743875278394vw);
         }
       }
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* Mobile layout by default */
-        background-image: url("./assets/img/Group.png");
-      }
-      /* Desktop */
-      @media (min-width: 451px) {
-        HTML {
-          /* Desktop layout */
-          background-image: url("./assets/img/Шот.png");
-        }
-      }
     </style>
     <script src="./script.js"></script>
-    <link href="./node_modules/pixel-glass/styles.css" rel="stylesheet" />
-    <script src="./node_modules/pixel-glass/script.js"></script>
     <title>Шот Жизни</title>
   </head>
   <body>
@@ -64,7 +49,7 @@
         class="mob:bg-[url('./assets/img/Shot/shot-1-block-ad-bg.webp')] mob:p-4 mob:h-[49.6875rem] h-[60.338rem] bg-[url('./assets/img/Shot/shot-1-block-bg.webp')] bg-[size:100%_100.1%] bg-[position:center_top_0rem] bg-no-repeat"
       >
         <div
-          class="mob:m-0 mob:p-0 -mt-[0.812rem] ml-[5.8125rem] w-fit pt-[1.375rem]"
+          class="mob:m-0 mob:p-0 relative z-[9999] -mt-[0.812rem] ml-[5.8125rem] w-fit pt-[1.375rem]"
         >
           <h1 class="mob:mb-0 z-50 mb-2 uppercase">
             Шот <br />

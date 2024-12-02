@@ -724,7 +724,7 @@ h1 {
   opacity: 0.75;
 }
 
-@media (max-width: 28.125rem) {
+@media (max-width: 450px) {
   h1 {
     font-size: 4.375rem;
     opacity: 0.8;
@@ -876,7 +876,7 @@ header {
   position: absolute;
 }
 
-@media (min-width: 28.1875rem) {
+@media (min-width: 451px) {
   .pain:hover:nth-child(odd) {
     animation: slide-left 1s ease-in-out infinite alternate;
   }
@@ -922,7 +922,7 @@ header {
   }
 }
 
-@media (max-width: 28.125rem) {
+@media (max-width: 450px) {
   .pain {
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 3.175rem 1.875rem 1.875rem 0rem;
@@ -1053,6 +1053,14 @@ header {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[99999\] {
+  z-index: 99999;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
 }
 
 .m-0 {
@@ -2099,10 +2107,6 @@ header {
   opacity: 55%;
 }
 
-.opacity-\[80\%\] {
-  opacity: 80%;
-}
-
 .opacity-\[73\%\] {
   opacity: 73%;
 }
@@ -2222,7 +2226,7 @@ header {
     border-radius: 1.875rem 1.875rem 0rem 1.875rem;
   }
 
-  @media (min-width: 28.1875rem) {
+  @media (min-width: 451px) {
     .mob\:pain:hover:nth-child(odd) {
       animation: slide-left 1s ease-in-out infinite alternate;
     }
@@ -2320,7 +2324,7 @@ header {
     }
   }
 
-  @media (max-width: 28.125rem) {
+  @media (max-width: 450px) {
     .mob\:pain {
       padding: 0.5rem 1rem 0.5rem 1rem;
       border-radius: 3.175rem 1.875rem 1.875rem 0rem;
@@ -2373,7 +2377,7 @@ header {
     line-height: 1.2;
   }
 
-  @media (max-width: 28.125rem) {
+  @media (max-width: 450px) {
     .desk\:comment-content {
       padding: 1rem 1.25rem 1.5rem 1.25rem;
     }
@@ -2420,10 +2424,6 @@ header {
 
   .mob\:top-8 {
     top: 2rem;
-  }
-
-  .mob\:top-\[9\.6864rem\] {
-    top: 9.6864rem;
   }
 
   .mob\:top-\[10\.186rem\] {

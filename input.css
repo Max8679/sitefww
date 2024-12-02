@@ -152,7 +152,7 @@
     opacity: 0.75;
   }
 
-  @media (max-width: 28.125rem) {
+  @media (max-width: 450px) {
     h1 {
       font-size: 4.375rem;
       opacity: 0.8;
@@ -303,7 +303,7 @@
     position: absolute;
   }
 
-  @media (min-width: 28.1875rem) {
+  @media (min-width: 451px) {
     .pain:hover:nth-child(odd) {
       animation: slide-left 1s ease-in-out infinite alternate;
     }
@@ -347,7 +347,7 @@
     }
   }
 
-  @media (max-width: 28.125rem) {
+  @media (max-width: 450px) {
     .pain {
       padding: 0.5rem 1rem 0.5rem 1rem;
       border-radius: 3.175rem 1.875rem 1.875rem 0rem;
