@@ -213,6 +213,24 @@
   .pain-white p {
     color: #303030;
     font-size: 1.25rem;
+    font-family: "Stolzl Book";
+  }
+
+  .pain-talks p {
+    font-size: 1rem;
+  }
+
+  .pain-talks {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(232, 234, 231, 0.7);
+  }
+
+  .pain-talks-bottom {
+    background-color: rgba(232, 234, 231, 0.6);
+  }
+
+  .pain-talks-bottom p {
+    font-size: 1.25rem;
   }
 
   .message-block {
@@ -404,6 +422,10 @@
 
   .margin-top-24 {
     margin-top: 1.5rem;
+  }
+
+  .margin-top-32 {
+    margin-top: 2rem;
   }
 
   .margin-top-48 {
