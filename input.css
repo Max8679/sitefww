@@ -221,12 +221,13 @@
   }
 
   .pain-talks {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: rgba(232, 234, 231, 0.7);
   }
 
   .pain-talks-bottom {
     background-color: rgba(232, 234, 231, 0.6);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
 
   .pain-talks-bottom p {
@@ -296,12 +297,16 @@
     box-shadow: 0px 0.25rem 0.2rem 0px rgba(0, 0, 0, 0.25);
   }
 
+  .box-shadow-talks {
+    box-shadow: 0px 0.25rem 0.2rem 0px rgba(0, 0, 0, 0.15);
+  }
+
   .comment-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 2.5rem 1.5rem 2.5rem;
-    border-radius: 0 0 1.8125rem 1.8125rem;
+    border-radius: 0 0pain-tal 1.8125rem 1.8125rem;
     background-color: rgba(213, 213, 212, 0.8);
   }
 
@@ -385,16 +390,54 @@
       font-size: 1.125rem;
     }
 
+    .pain-talks {
+      padding: 1.125rem 1.75rem 1.125rem 2.375rem;
+      border-radius: 1.875rem 1.875rem 1.875rem 0rem;
+    }
+
+    .pain-talks-right {
+      border-radius: 1.875rem 1.875rem 0rem 1.875rem;
+      padding: 1.125rem 1.75rem 1.125rem 2.375rem;
+    }
+
+    .pain-talks p {
+      font-size: 1rem;
+    }
+
+    .pain-talks-20 p {
+      font-size: 1.25rem;
+    }
+
+    .pain-talks-small-padding {
+      padding: 0.5rem 1rem 0.5rem 1.25rem;
+    }
+
+    .pain-talks-large-padding {
+      padding: 0.5rem 1.9375rem 0.5rem 2.1875rem;
+    }
+
     .comment-content {
       padding: 1rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    .comment-content-talks {
+      padding: 1rem 2.5rem 1.5rem 2.5rem;
     }
 
     .comment-header {
       padding: 0.5rem 1.25rem 0.5rem 1.25rem;
     }
 
+    .comment-header-talks {
+      padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    }
+
     .author {
       font-size: 1rem;
+    }
+
+    .author-talks {
+      font-size: 1.3125rem;
     }
 
     .sofia-icon {
@@ -408,10 +451,23 @@
       font-size: 1rem;
       line-height: 1.2;
     }
+
+    .quote-talks {
+      font-size: 1.125rem;
+      line-height: 1.15;
+    }
+
+    .stolzl {
+      font-family: "Stolzl";
+    }
   }
 }
 
 @layer utilities {
+  .decimal {
+    list-style-type: decimal;
+  }
+
   .margin-top-16 {
     margin-top: 1rem;
   }
@@ -494,6 +550,12 @@
 
   .margin-right-8 {
     margin-right: 0.5rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    .decimal {
+      line-height: 1.625rem;
+    }
   }
 }
 

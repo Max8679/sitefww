@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="./style.css" />
     <style>
       html {
-        font-size: calc(-0.005825242718446644rem + 1.087378640776699vw);
+        font-size: calc(-0.00003846153846165379rem + 1.0974358974358975vw);
       }
-      @media screen and (max-width: 1480px) {
+      @media screen and (max-width: 1458px) {
         html {
-          font-size: calc(-0.005825242718446588rem + 1.087378640776699vw);
+          font-size: calc(-0.00003846153846159828rem + 1.0974358974358975vw);
         }
       }
       @media screen and (max-width: 450px) {
         html {
-          font-size: calc(-0.0022271714922048997rem + 3.5634743875278394vw);
+          font-size: calc(-0.001669449081803005rem + 2.671118530884808vw);
         }
       }
     </style>
@@ -25,7 +25,7 @@
         background-repeat: no-repeat;
         background-position: 50% 0;
         /* Mobile layout by default */
-        background-image: url("img/320.png");
+        background-image: url("./assets/img/Talks/Group 7.png");
       }
       /* Desktop */
       @media (min-width: 1458px) {
@@ -62,23 +62,30 @@
       </nav>
     </header>
     <section
-      class="bg-[url('./assets/img/Talks/talks-1-block-bg.webp')] bg-cover bg-no-repeat px-[7.9375rem] pb-[16.875rem] pt-[5.25rem]"
+      class="mob:pb-0 mob:pt-20 mob:h-[81.25rem] mob:px-16 mob:bg-[url('./assets/img/Talks/talks-1-block-bg-ad.webp')] bg-[url('./assets/img/Talks/talks-1-block-bg.webp')] bg-cover bg-no-repeat px-[7.9375rem] pb-[15.875rem] pt-[5.25rem]"
     >
       <h1 class="sr-only">Вертфоллен Talks</h1>
       <div>
-        <img
-          class="h-[26.75rem] w-[32.5rem]"
-          src="./assets/img/Talks/talks-1-block-header.webp"
-          alt=""
-        />
+        <div class="">
+          <img
+            class="mob:hidden h-[26.75rem] w-[32.5rem]"
+            src="./assets/img/Talks/talks-1-block-header.webp"
+            alt=""
+          />
+          <img
+            src="./assets/img/Talks/talks-1-block-header-ad.webp"
+            class="desk:hidden mob:w-[28.125rem] mob:h-[23.1487rem]"
+            alt=""
+          />
+        </div>
         <p
-          class="mt-2 text-[2.25rem] font-light leading-[1.4] text-white opacity-[73%]"
+          class="mob:text-[1.875rem] mob:mt-2 mt-[0.25rem] text-[2.25rem] font-light leading-[1.4] text-white opacity-[73%]"
         >
           ЗАКРЫТЫЙ КЛУБ ПИСАТЕЛЯ <br />
           <span class="mt-2">ФРАНЦА ВЕРТФОЛЛЕНА</span>
         </p>
       </div>
-      <div class="">
+      <div class="mob:hidden">
         <blockquote class="message-block ml-[15.625rem] mt-[6.1875rem]">
           <div class="comment-block desk:z-0 relative">
             <div class="comment box-shadow overflow-hidden rounded-[1.8125rem]">
@@ -109,26 +116,30 @@
       </div>
     </section>
     <section
-      class="bg-[url('./assets/img/Talks/talks-2-block-bg.webp')] bg-cover bg-no-repeat pb-[3.125rem] pt-[1.875rem]"
+      class="mob:flex-col mob:-mt-[0.244rem] mob:pt-[2.8125rem] mob:-mb-[0.244rem] mob:bg-[url('./assets/img/Talks/talks-2-block-bg-ad.webp')] mob:pl-[2.375rem] mob:pr-[2.5625rem] mob:flex bg-[url('./assets/img/Talks/talks-2-block-bg.webp')] bg-cover bg-no-repeat pb-[3.125rem] pt-[1.875rem]"
     >
-      <div class="ml-[0.8125rem]">
+      <div class="mob:flex mob:flex-col mob:items-center">
         <div
-          class="comment-block sigrun-block relative z-0 mb-[7.6875rem] ml-[21rem]"
+          class="comment-block sigrun-block desk:mb-[7.6875rem] desk:ml-[21rem] relative z-0"
         >
-          <div class="comment box-shadow overflow-hidden rounded-[1.8125rem]">
+          <div
+            class="comment box-shadow-talks overflow-hidden rounded-[1.8125rem]"
+          >
             <div
               class="justify-center bg-[rgba(255,255,255,0.69)] py-4 text-center"
             >
               <p
-                class="stolzl-book text-[1.375rem] leading-[1.25] text-black opacity-[73%]"
+                class="stolzl-book mob:text-[1.625rem] text-[1.375rem] leading-[1.25] text-black opacity-[73%]"
               >
                 Представь
               </p>
             </div>
 
-            <div class="w-[28.625rem] bg-[rgba(255,255,255,0.69)]">
+            <div
+              class="mob:stolzl-book mob:w-[32.5625rem] w-[28.625rem] bg-[rgba(255,255,255,0.69)] font-light"
+            >
               <p
-                class="mb-2 text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
+                class="mob:text-[1.125rem] mb-2 text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
               >
                 Будильник. Ух, тяжело. Ты тянешься к телефону, <br />
                 Чтобы как-то разлепить глаза. Хочется найти <br />
@@ -136,7 +147,7 @@
                 и побежит по мозгу, как кофе — по телу.
               </p>
               <p
-                class="text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
+                class="mob:text-[1.125rem] text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
               >
                 Ты скроллишь... скроллишь... И ничего не дает <br />
                 толчка встать и начать день не как зомби.
@@ -144,7 +155,8 @@
               <div class="bg-darkLiver mt-4 h-[0.0625rem] w-full"></div>
               <div class="py-4 text-center">
                 <a
-                  class="link-blue text-[1.125rem] leading-[1.25] opacity-[73%]"
+                  class="link-blue mob:text-[1.375rem] text-[1.125rem] leading-[1.25] opacity-[73%]"
+                  href=""
                 >
                   Было такое
                 </a>
@@ -152,23 +164,40 @@
             </div>
           </div>
         </div>
+        <div class="desk:hidden mb-[13.375rem] mt-[5.375rem] text-[1rem]">
+          <div class="pain pain-white pain-talks ml-[12.375rem]">
+            <p aria-hidden="true">ну и где найти силы</p>
+          </div>
+          <div class="mt-[1.375rem] flex">
+            <div class="pain pain-white pain-talks margin-top-16 ml-[7rem]">
+              <p aria-hidden="true">блин, проспала</p>
+            </div>
+            <div class="pain pain-white pain-talks ml-[2.25rem]">
+              <p aria-hidden="true">ещё 5 минут</p>
+            </div>
+          </div>
+        </div>
         <div
-          class="comment-block sigrun-block relative z-0 mb-[3.5rem] ml-[40.8125rem]"
+          class="comment-block sigrun-block desk:mb-[3.5rem] desk:ml-[40.8125rem] relative z-0"
         >
-          <div class="comment box-shadow overflow-hidden rounded-[1.8125rem]">
+          <div
+            class="comment box-shadow-talks overflow-hidden rounded-[1.8125rem]"
+          >
             <div
               class="justify-center bg-[rgba(255,255,255,0.69)] py-4 text-center"
             >
               <p
-                class="stolzl-book text-[1.375rem] leading-[1.25] text-black opacity-[73%]"
+                class="stolzl-book mob:text-[1.625rem] text-[1.375rem] leading-[1.25] text-black opacity-[73%]"
               >
                 Представь
               </p>
             </div>
 
-            <div class="w-[28.625rem] bg-[rgba(255,255,255,0.69)]">
+            <div
+              class="mob:stolzl-book mob:w-[32.5625rem] w-[28.625rem] bg-[rgba(255,255,255,0.69)]"
+            >
               <p
-                class="mb-2 text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
+                class="mob:text-[1.125rem] mb-2 text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
               >
                 Ты дома, уставший после работы, и столько <br />
                 накопилось дел. Хочется вставить наушники с <br />
@@ -176,7 +205,7 @@
                 душой, но всё, что ты видишь — приелось.
               </p>
               <p
-                class="text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
+                class="mob:text-[1.125rem] text-center text-[0.875rem] font-light leading-[1.25] opacity-[73%]"
               >
                 И теперь ты завис, перебирая контент, <br />
                 вместо того, чтобы справляться с делами.
@@ -184,7 +213,8 @@
               <div class="bg-darkLiver mt-4 h-[0.0625rem] w-full"></div>
               <div class="py-4 text-center">
                 <a
-                  class="link-blue text-[1.125rem] leading-[1.25] opacity-[73%]"
+                  class="link-blue mob:text-[1.375rem] text-[1.125rem] leading-[1.25] opacity-[73%]"
+                  href=""
                 >
                   Было такое
                 </a>
@@ -192,7 +222,20 @@
             </div>
           </div>
         </div>
-        <div class="-mt-[34.375rem] flex flex-col gap-4">
+        <div class="desk:hidden mb-[25.625rem] mt-[1.875rem] w-full">
+          <div class="pain pain-white pain-talks-right pain-talks ml-[6rem]">
+            <p aria-hidden="true">нет настроения</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-right pain-talks margin-top-16 mb-[2.25rem]"
+          >
+            <p aria-hidden="true">я так сижу уже час</p>
+          </div>
+          <div class="pain pain-white pain-talks-right pain-talks ml-20">
+            <p aria-hidden="true">опять ничего не успею</p>
+          </div>
+        </div>
+        <div class="mob:hidden -mt-[34.675rem] flex flex-col gap-4">
           <div class="pain pain-white pain-right pain-talks ml-[60.125rem]">
             <p aria-hidden="true">нет настроения</p>
           </div>
@@ -219,62 +262,108 @@
           </div>
         </div>
       </div>
-      <div class="ml-[13.938rem] mt-[15.363rem] flex leading-[1.25]">
-        <div class="rotate-1">
-          <p class="text-center text-[1.125rem] font-light opacity-[73%]">
+      <div
+        class="desk:ml-[13.938rem] desk:mt-[14.8rem] mob:flex-col flex leading-[1.25]"
+      >
+        <div class="mob:mb-[11.338rem] desk:-mt-[0.6875rem] rotate-[0.6deg]">
+          <p
+            class="mob:ml-[8.144rem] mob:stolzl-book mob:w-[23.0625rem] mob:relative mob:top-[1.025rem] text-center text-[1.125rem] font-light opacity-[73%]"
+          >
             Хочется, чтобы было ОДНО МЕСТО, <br />
             куда всегда можно вернуться и найти <br />
             “ТО САМОЕ” за один клик.
           </p>
         </div>
-        <div class="ml-[18.45rem] text-[1.125rem] font-light opacity-[73%]">
-          <p class="mb-[21px]">
-            <span class="mb-2 text-[2.25rem]">Что это за место,</span> <br />
-            где всегда свежие темы под настроение? <br />
+        <div
+          class="desk:ml-[17.55rem] desk:top-[0.294rem] desk:relative mob:ml-[0.9063rem] mob:text-[1.25rem] text-[1.125rem] font-light opacity-[73%]"
+        >
+          <p class="desk:mb-[1.113rem] mob:stolzl-book mob:text-white">
+            <span class="mob:mb-1 mb-2 text-[2.25rem]">Что это за место,</span>
+            <br />
+            где всегда
+            <span class="mob:text-[#95F3BF]">свежие темы под настроение?</span>
+            <br />
             Искусство, наука, история, психология — <br />
-            и всё это подано с заразительной радостью, <br />
-            с очаровательным остроумием.
+            и всё это подано
+            <span class="mob:text-[#95F3BF]">с заразительной радостью,</span>
+            <br />
+            <span class="mob:text-[#E6E990]">с очаровательным остроумием.</span>
           </p>
-          <p class="-ml-8 text-[2.25rem]">Это Вертфоллен Talks.</p>
-          <p class="mr-8 text-right">Подкасты, статьи и видео.</p>
+          <p class="mob:hidden -ml-[1.8rem] text-[2.25rem]">
+            Это Вертфоллен Talks.
+          </p>
+          <p class="mob:hidden mr-[1.8rem] mt-[0.25rem] text-right">
+            Подкасты, статьи и видео.
+          </p>
         </div>
       </div>
     </section>
     <section
-      class="bg-[url('./assets/img/Talks/talks-3-block-bg.webp')] bg-cover bg-no-repeat"
+      class="mob:bg-[url('./assets/img/Talks/talks-3-block-bg-ad.webp')] desk:-mb-[0.1062rem] mob:-mt-[0.0563rem] mob:-ml-[0.287rem] mob:bg-cover bg-[url('./assets/img/Talks/talks-3-block-bg.webp')] bg-[size:100%_100%] bg-no-repeat"
     >
-      <div class="pl-[8.7188rem] pr-[8.4688rem] pt-[13.375rem]">
-        <div class="stolzl-book flex opacity-[73%]">
-          <div class="small flex flex-col gap-6 font-bold leading-[1.15]">
+      <div
+        class="mob:px-0 mob:pt-[4.5rem] mob:pb-[2.0625rem] pl-[8.7188rem] pr-[8.4688rem] pt-[12.013rem]"
+      >
+        <div
+          class="mob:flex-col-reverse stolzl-book mob:opacity-[73%] flex opacity-[1]"
+        >
+          <div
+            class="mob:mt-[45.8rem] mob:text-[1.375rem] mob:ml-12 mob stolzl-book small desk:gap-6 mob:font-bold flex flex-col font-normal leading-[1.20] opacity-[73%]"
+          >
             <p>
               Когда вы последний раз ипытывали “ах” <br />
               в сердце от очаровательности автора?
             </p>
-            <p>
-              А Франц Вертфоллен за обычным обедом может дать <br />
-              такой анализ книги / кино / экономического события, <br />
-              что ты как нетерпеливый режиссер кричишь: <br />
-              “Камеру, микрофон сюда, срочно! <br />
-              Это нужно в эфир!”
+            <p class="mob:mt-[1.75rem]">
+              А Франц Вертфоллен за обычным обедом <br class="desk:hidden" />
+              может дать
+              <br class="mob:hidden" />
+              такой анализ <br class="desk:hidden" />
+              книги / кино / экономического события, <br />
+              что ты как нетерпеливый режиссер <br class="desk:hidden" />
+              кричишь: <br />
+              <span class="mob:mt-[1.75rem] mob:block"
+                >“Камеру, микрофон сюда, срочно! <br />
+                Это нужно в эфир!”</span
+              >
             </p>
-            <p>Так и родился “Вертфоллен Talks”.</p>
-            <p>
-              Самая необходимая информация, <br />
-              поданная с теплом дружеского ужина.
-            </p>
-            <p>— Зуи, куратор проекта</p>
+
+            <div class="mob:mr-[4.256rem] flex flex-col gap-6">
+              <p
+                class="mob:stolzl mob:font-normal mob:text-right mob:mt-[6.625rem]"
+              >
+                Так и родился “Вертфоллен Talks”.
+              </p>
+              <p class="mob:stolzl mob:font-normal mob:text-right">
+                Самая необходимая информация, <br />
+                поданная с теплом дружеского ужина.
+              </p>
+              <p class="mob:stolzl mob:font-normal mob:text-right">
+                — Зуи, куратор проекта
+              </p>
+            </div>
           </div>
-          <div class="ml-[33.313rem] text-[1.375rem] leading-[1.2]">
-            <p class="flex flex-col gap-2">
-              <span class="ml-3">Шот горячего</span>
-              <span class="ml-2">“кофе” для</span>
-              <span class="ml-1">уставшего</span>
+          <div
+            class="mob:ml-12 mob:leading-[1.15] mob:text-[1.5rem] mob:font-bold ml-[33.313rem] text-[1.375rem] leading-[1.2] opacity-[73%]"
+          >
+            <p
+              class="stolzl desk:hidden mob:mb-4 mob:stolzl-book mb-3 text-[2.375rem] font-light"
+            >
+              Это Вертфоллен Talks.
+            </p>
+            <p class="desk:hidden stolzl-book mb-4">
+              Подкасты, статьи и видео.
+            </p>
+            <p class="stolzl-book mob:leading-[1.20] flex flex-col gap-2">
+              <span class="desk:ml-3">Шот горячего</span>
+              <span class="desk:ml-2">“кофе” для</span>
+              <span class="desk:ml-1">уставшего</span>
               <span>мозга</span>
             </p>
           </div>
         </div>
         <div
-          class="-mt-[10.725rem] ml-[15.563rem] h-[32.3125rem] w-[47.875rem]"
+          class="mob:hidden -mt-[12.125rem] ml-[14.963rem] h-[32.3125rem] w-[47.875rem]"
         >
           <img
             class="h-full"
@@ -285,14 +374,14 @@
         </div>
       </div>
       <div
-        class="-mt-[0.9375rem] ml-[5.125rem] mr-[5.625rem] flex gap-[5.25rem] pb-[2.25rem]"
+        class="mob:hidden -mt-[0.9375rem] ml-[4.425rem] mr-[5.625rem] flex gap-[5.25rem] pb-[2.25rem]"
       >
-        <blockquote class="message-block mt-[15.9375rem]">
-          <div class="comment-block desk:z-0 relative">
+        <blockquote class="message-block mt-[15.9375rem] h-fit">
+          <div class="comment-block relative z-0">
             <div
-              class="comment box-shadow w-[29.463rem] overflow-hidden rounded-[1.8125rem]"
+              class="comment box-shadow w-[29.163rem] overflow-hidden rounded-[1.8125rem]"
             >
-              <div class="comment-header">
+              <div class="comment-header desk:z-0 relative">
                 <div class="comment-header-name">
                   <img
                     src="./assets/img/Shot/shot-messages-icon.svg"
@@ -332,14 +421,14 @@
             src="./assets/img/Talks/talks-3-block-sofia.webp"
             draggable="false"
             alt=""
-            class="absolute bottom-[17.3125rem] left-[9.0625rem] z-10 h-[19.9375rem] w-[20rem]"
+            class="absolute left-[9.8125rem] top-[-16.8125rem] z-10 h-[19.9375rem] w-[20rem]"
           />
         </blockquote>
         <div>
           <blockquote class="message-block">
             <div class="comment-block desk:z-0 relative">
               <div
-                class="comment box-shadow w-[29.163rem] overflow-hidden rounded-[1.8125rem]"
+                class="comment box-shadow w-[29.0625rem] overflow-hidden rounded-[1.8125rem]"
               >
                 <div class="comment-header">
                   <div class="comment-header-name">
@@ -355,9 +444,27 @@
                 </div>
                 <div class="comment-content">
                   <p class="quote" style="opacity: 1">
-                    Тут пока нет текста. Тут пока нет текста. Тут пока нет
-                    текста. Тут пока нет текста. Тут пока нет текста. Тут пока
-                    нет текста. Тут пока нет текста. Тут пока нет текста.
+                    Каждый подкаст,
+                    <span class="text-accentText"
+                      >даже самая легкая <br />
+                      болталка, расширяет голову.</span
+                    >
+                    Я раньше и не <br />
+                    замечала, с какой тесной головой хожу по <br />
+                    жизни - только привычное и понятное <br />
+                    помещается. А слушаешь Вертфоллен Talks, и <br />
+                    <span class="text-accentText"
+                      >видишь, сколько деталей упускаешь</span
+                    >
+                    в своих проблемах,
+                    <span class="text-accentText"
+                      >сколько выводов не делаешь, и <br />
+                      поэтому многое идет наперекосяк.</span
+                    >
+                    <br />
+                    Подкаст за подкастом Франц Вертфоллен <br />
+                    дает
+                    <span class="text-accentText"> нехватающие пазлы. </span>
                   </p>
                 </div>
               </div>
@@ -369,10 +476,10 @@
               class="absolute -top-[3rem] left-[26.0625rem] z-10 h-[19.9375rem] w-[20rem]"
             />
           </blockquote>
-          <blockquote class="message-block ml-[16.9375rem] mt-[7.5rem]">
+          <blockquote class="message-block ml-[16.9375rem] mt-[5.9rem]">
             <div class="comment-block desk:z-0 relative">
               <div
-                class="comment box-shadow w-[29.163rem] overflow-hidden rounded-[1.8125rem]"
+                class="comment box-shadow w-[29.0625rem] overflow-hidden rounded-[1.8125rem]"
               >
                 <div class="comment-header">
                   <div class="comment-header-name">
@@ -406,19 +513,166 @@
               src="./assets/img/Talks/talks-3-block-yurii.webp"
               draggable="false"
               alt=""
-              class="absolute -left-[16.9375rem] -top-[7.8719rem] z-10 h-[19.9375rem] w-[20rem]"
+              class="absolute -left-[16.9375rem] -top-[7.9rem] z-10 h-[19.9375rem] w-[20rem]"
             />
           </blockquote>
         </div>
       </div>
     </section>
     <section
-      class="mob:bg-[url('./assets/img/Talks/talks-4-block-bg.png')] desk:pb-[2.4838rem] bg-[url('./assets/img/Talks/talks-4-block-bg.png')] bg-cover bg-no-repeat"
+      class="mob:bg-[url('./assets/img/Talks/talks-4-block-bg-ad.webp')] mob:-mt-[0.125rem] mob:-mb-[0.131rem] mob:pb-[13.1463rem] bg-[url('./assets/img/Talks/talks-4-block-bg.webp')] bg-cover bg-no-repeat pb-[2.4838rem]"
     >
+      <div class="desk:hidden">
+        <blockquote class="message-block ml-[0.4688rem] pt-[21.125rem]">
+          <div class="comment-block relative z-0">
+            <div
+              class="comment box-shadow w-[33.163rem] overflow-hidden rounded-[1.8125rem]"
+            >
+              <div class="comment-header comment-header-talks">
+                <div class="comment-header-name">
+                  <img
+                    src="./assets/img/Shot/shot-messages-icon.svg"
+                    draggable="false"
+                    alt=""
+                    class="h-[2.6875rem] w-[2.75rem]"
+                  />
+                  <cite class="author author-talks uppercase not-italic"
+                    >СОФИЯ</cite
+                  >
+                </div>
+                <p class="author author-talks">Now</p>
+              </div>
+              <div class="comment-content comment-content-talks">
+                <p class="quote text-[1.25rem]" style="opacity: 1">
+                  “Ты то, что ты ешь”?
+                  <span class="text-accentText">Ты тот, кого ты слушаешь.</span>
+                  <br />
+                  Окошко в жизнь господина Вертфоллена его <br />
+                  тренировки, челленджи в работе, ширина <br />
+                  кругозора вдохновляют меня заняться своей жизнью. До
+                  знакомства с ним мне было так <br />
+                  постоянно вяло. И окружение было такое же, я <br />
+                  не знала как из этой вялости вырваться.
+                </p>
+                <p class="quote text-[1.25rem]" style="opacity: 1">
+                  С “Вертфоллен Talks”
+                  <span class="text-accentText"
+                    >ты начинаешь дышать <br />
+                    иначе и жить с более солнечным вайбом. Темп <br />
+                    мыслей ускоряется.</span
+                  >
+                  Это - самое ценное.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/img/Talks/talks-3-block-sofia.webp"
+            draggable="false"
+            alt=""
+            class="absolute bottom-0 left-[13.4375rem] top-[4.1875rem] z-10 h-[19.9375rem] w-[20rem]"
+          />
+        </blockquote>
+        <blockquote class="message-block ml-[4.4688rem] mt-[17.6875rem]">
+          <div class="comment-block relative z-20">
+            <div
+              class="comment box-shadow w-[29.863rem] overflow-hidden rounded-[1.8125rem]"
+            >
+              <div class="comment-header comment-header-talks">
+                <div class="comment-header-name">
+                  <img
+                    src="./assets/img/Shot/shot-messages-icon.svg"
+                    draggable="false"
+                    alt=""
+                    class="h-[2.6875rem] w-[2.75rem]"
+                  />
+                  <cite class="author author-talks uppercase not-italic"
+                    >ЮРИЙ</cite
+                  >
+                </div>
+                <p class="author author-talks">Now</p>
+              </div>
+              <div class="comment-content comment-content-talks">
+                <p class="quote quote-talks" style="opacity: 1">
+                  Ещё
+                  <span class="text-accentText">ты экономишь время,</span>
+                  потому что меньше <br />
+                  тянешься зависать в телефоне. Твой мозг <br />
+                  стимулируется в течение дня,
+                  <span class="text-accentText"
+                    >поднимается <br />
+                    уровень дофамина, и рефлекса “заскроллить” <br />
+                    становится меньше.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/img/Talks/talks-3-block-yurii.webp"
+            draggable="false"
+            alt=""
+            class="absolute -left-[4rem] -top-[16.9375rem] z-10 h-[19.9375rem] w-[20rem]"
+          />
+        </blockquote>
+        <blockquote class="message-block ml-[0.4688rem] mt-[18.6875rem]">
+          <div class="comment-block relative z-0">
+            <div
+              class="comment box-shadow w-[31.163rem] overflow-hidden rounded-[1.8125rem]"
+            >
+              <div class="comment-header comment-header-talks">
+                <div class="comment-header-name">
+                  <img
+                    src="./assets/img/Shot/shot-messages-icon.svg"
+                    draggable="false"
+                    alt=""
+                    class="h-[2.6875rem] w-[2.75rem]"
+                  />
+                  <cite class="author author-talks uppercase not-italic"
+                    >КСЕНИЯ</cite
+                  >
+                </div>
+                <p class="author author-talks">Now</p>
+              </div>
+              <div class="comment-content comment-content-talks">
+                <p class="quote quote-talks" style="opacity: 1">
+                  Каждый подкаст,
+                  <span class="text-accentText"
+                    >даже самая легкая болталка, расширяет голову.</span
+                  >
+                  Я раньше и не замечала, <br />
+                  с какой тесной головой хожу по жизни - только <br />
+                  привычное и понятное помещается. А слушаешь <br />
+                  Вертфоллен Talks, и
+                  <span class="text-accentText"
+                    >видишь, сколько деталей <br />
+                    упускаешь</span
+                  >
+                  в своих проблемах,
+                  <span class="text-accentText"
+                    >сколько выводов <br />
+                    не делаешь, и поэтому многое идет <br />
+                    наперекосяк.</span
+                  >
+                  <br />
+                  Подкаст за подкастом Франц Вертфоллен дает <br />
+                  <span class="text-accentText"> нехватающие пазлы. </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/img/Talks/talks-3-block-ksenia.webp"
+            draggable="false"
+            alt=""
+            class="absolute bottom-[17.3125rem] left-[16.5625rem] z-10 h-[19.9375rem] w-[20rem]"
+          />
+        </blockquote>
+      </div>
       <h2 class="sr-only">Кто такой Франц Вертфоллен</h2>
       <div class="desk:flex">
         <div
-          class="mob:hidden z-10 -mt-[0.712rem] ml-[0.875rem] h-[44.2037rem] w-[37.5rem]"
+          class="mob:w-[30.0625rem] mob:mx-[3.7188rem] mob:h-[35.4375rem] mob:mt-0 z-10 -mt-[2.212rem] ml-[0.875rem] h-[44.2037rem] w-[37.5rem]"
         >
           <img
             src="assets/img/Talks/talks-4-block-senior.webp"
@@ -427,9 +681,9 @@
             class="h-full w-full"
           />
         </div>
-        <div class="mt-[4.271rem]">
+        <div class="mob:-mt-[1.95rem] desk:mt-[3.771rem]">
           <div
-            class="mob:w-[20.625rem] mob:h-[7rem] h-[11.375rem] w-[34.75rem] pl-3"
+            class="mob:w-[34.75rem] desk:-ml-[0.125rem] mob:h-[11.375rem] mob:ml-3 h-[11.375rem] w-[34.75rem]"
           >
             <img
               src="./assets/img/Shot/shot-8-block-title.webp"
@@ -437,20 +691,17 @@
               alt=""
             />
           </div>
-          <div class="mob:ml-8 mob:-mt-[3.971rem] desk:pl-12 font-light">
-            <p class="regular mob:text-[1rem] text-[1.125rem] leading-[1.15]">
-              ведущий Шота Жизни
+          <div
+            class="mob:ml-12 mob:-mt-[1rem] mob:mr-16 desk:pl-[2.1rem] font-light"
+          >
+            <p class="regular text-[1.125rem] leading-[1.15]">
+              ведущий Вертфоллен Talks -
               <br class="desk:hidden" />
-              <span class="stolzl-book">
-                <span class="mob:hidden mob:text-[1.0625rem]">-</span> писатель
-                и тонкий психолог.</span
-              >
+              <span class="stolzl-book"> писатель и тонкий психолог.</span>
             </p>
-            <p
-              class="regular mob:mb-6 mob:text-[1rem] mt-6 text-[1.125rem] leading-[1.20]"
-            >
+            <p class="regular mob:mt-4 mt-6 text-[1.125rem] leading-[1.20]">
               Он учился во Франции,
-              <span class="stolzl-book mob:text-[1.0625rem]"
+              <span class="stolzl-book"
                 >специализируясь <br class="desk:hidden" />
                 на коммуникации <br class="mob:hidden" />
                 между людьми <br class="desk:hidden" />
@@ -460,47 +711,48 @@
               (Университет Поля Верлена, <br class="desk:hidden" />
               Communication and information Sciences)
             </p>
-            <div class="mob:w-[23.75rem] mob:h-[22.0625rem] mob:mx-[0.1875rem]">
-              <img
-                src="./assets/img/Talks/talks-4-block-senior.webp"
-                class="desk:hidden h-full w-full"
-                alt="Франц Вертфоллен"
-                draggable="false"
-              />
-            </div>
-            <p class="regular mt-6 text-[1rem] leading-[1.20]">
-              Работал в штаб квартире <br class="desk:hidden" />
-              UNESCO в Париже <br />
-              и вёл передачу на центральном <br class="desk:hidden" />
+            <p
+              class="regular mob:ml-[12.625rem] mob:mt-[4.663rem] mt-6 text-[1rem] leading-[1.20]"
+            >
+              Работал в
+              <span class="mob:stolzl-book"
+                >штаб квартире <br class="desk:hidden" />
+                UNESCO</span
+              >
+              в Париже<br />
+              и вёл передачу <br class="desk:hidden" />
+              на центральном <br class="desk:hidden" />
               телевидении Казахстана. <br />
-              В 23 года открыл свою <br class="desk:hidden" />
-              актёрскую школу,
+              В 23 года
+              <span class="mob:stolzl-book"
+                >открыл свою <br class="desk:hidden" />
+                актёрскую школу,</span
+              >
               <br />
-              В 25 издал первую книгу<br class="desk:hidden" />
-              “Автопортрет”. <br />
-              <span class="mob:hidden">
-                Сейчас живёт и работает в Лос-Анджелее.
+              В 25 издал
+              <span class="mob:stolzl-book"
+                >первую книгу<br class="desk:hidden" />
+                “Автопортрет”.</span
+              ><br />
+              <span class="mob:mt-2 mob:block">
+                Сейчас живёт и работает <br class="desk:hidden" />
+                в Лос-Анджелее.
               </span>
             </p>
-            <p class="regular mob:hidden mt-6 text-[1rem] leading-[1.15]">
-              Хотите подсмотреть за жизнью Франца Вертфоллена, <br />
+            <p
+              class="regular mob:ml-[12.625rem] mob:mt-8 mt-6 text-[1rem] leading-[1.15]"
+            >
+              Хотите
+              <span class="mob:stolzl-book"
+                >подсмотреть за жизнью Франца Вертфоллена,</span
+              >
+              <br />
               подписывайтесь на
-            </p>
-            <p class="desk:hidden regular mt-6 text-[1rem] leading-[1.20]">
-              Сейчас живёт и работает <br />
-              в Лос-Анджелее.
             </p>
           </div>
           <div
-            class="mob:mr-4 mob:pl-[13.25rem] mob:mt-[3.05rem] mob:-mb-[0.5625rem] mt-[0.431rem] flex w-fit flex-col items-center pl-[14.875rem]"
+            class="mob:mr-[4.6875rem] mob:pl-[16.3125rem] mob:mt-8 mob:-mb-[0.5625rem] mt-[0.125rem] flex w-fit flex-col items-center pl-[14.075rem]"
           >
-            <div class="desk:hidden h-[3.75rem] w-[12.375rem]">
-              <img
-                src="./assets/img/Shot/shot-8-block-arrows.webp"
-                class="h-full w-full"
-                alt=""
-              />
-            </div>
             <div class="mob:mb-2 flex gap-3">
               <a
                 href="https://www.youtube.com/@FranzWertvollen"
@@ -510,7 +762,7 @@
               >
                 <img
                   src="assets/img/Shot/shot-8-block-yt.webp"
-                  class="mob:h-[3.9663rem] mob:w-[4rem] h-[7.3125rem] w-[7.375rem]"
+                  class="mob:h-[4.9575rem] mob:w-[5rem] h-[7.3125rem] w-[7.375rem]"
                   alt="Youtube"
                   draggable="false"
                 />
@@ -523,7 +775,7 @@
               >
                 <img
                   src="assets/img/Shot/shot-8-block-insta.webp"
-                  class="mob:w-[4rem] mob:h-[4rem] h-[7.375rem] w-[7.375rem]"
+                  class="mob:w-20 mob:h-20 h-[7.375rem] w-[7.375rem]"
                   alt="Instagram"
                   draggable="false"
                 />
@@ -536,33 +788,36 @@
               >
                 <img
                   src="assets/img/Shot/shot-8-block-tg.webp"
-                  class="mob:w-[4rem] mob:h-[4rem] h-[7.375rem] w-[7.375rem]"
+                  class="mob:w-20 mob:h-20 h-[7.375rem] w-[7.375rem]"
                   alt="Telegram"
                   draggable="false"
                 />
               </a>
             </div>
-            <p class="desk:hidden text-[1rem] font-light opacity-[73%]">
-              подписывайтесь
-            </p>
           </div>
         </div>
       </div>
-      <div>
+      <div class="mob:hidden">
         <div class="flex justify-start">
           <div
-            class="mob:mb-[8.375rem] ml-[5.4063rem] mt-[6rem] flex flex-col items-center text-white"
+            class="ml-[5.4063rem] mt-[7.927rem] flex flex-col items-center text-white"
           >
             <h2 class="sr-only">купить месяц TALKS</h2>
 
-            <a
-              href=""
-              class="mob:text-[1.75rem] mob:w-max mob:mb-4 mb-2 block w-fit rounded-[1.5rem] border-[0.125rem] border-white px-4 py-2 text-[2.25rem] font-light uppercase leading-[1.15]"
-            >
-              <span class="opacity-[73%]">купить месяц TALKS</span>
+            <a href="" class="relative mb-2 block w-fit">
+              <p
+                class="absolute right-[1.05rem] top-2 z-10 text-[2.25rem] font-light uppercase leading-[1.15] opacity-[73%]"
+              >
+                купить месяц TALKS
+              </p>
+              <img
+                src="./assets/img/Talks/talks-4-block-button.svg"
+                class="relative z-0 h-[3.6875rem] w-[27.375rem] object-cover"
+                alt=""
+              />
             </a>
             <p
-              class="mob:text-[3.5rem] mb-2 text-[4.5rem] font-light leading-[1.15] text-white opacity-[73%]"
+              class="mb-2 text-[4.5rem] font-light leading-[1.15] text-white opacity-[73%]"
             >
               1450₽
             </p>
@@ -574,7 +829,7 @@
             </p>
           </div>
         </div>
-        <div class="-mt-[18.0938rem]">
+        <div class="-mt-[18.294rem]">
           <div
             class="pain pain-white pain-talks pain-talks-bottom ml-[41.25rem] mt-[6rem]"
           >
@@ -662,12 +917,179 @@
         </div>
       </div>
     </section>
-    <section class="pb-[7.25rem] pl-[6.375rem] pt-[4.625rem]">
-      <div>
-        <h2>
+    <section
+      class="mob:pb-[8.425rem] mob:pt-[5.1875rem] desk:pl-[6.375rem] mob:bg-[url('./assets/img/Talks/talks-5-block-bg-ad.webp')] bg-[url('./assets/img/Talks/talks-5-block-bg.webp')] bg-cover bg-no-repeat pb-[6.45rem] pt-[4.625rem]"
+    >
+      <div class="desk:hidden">
+        <a
+          href=""
+          class="mx-auto mb-2 block w-fit rounded-[1.5rem] border-[0.125rem] border-white px-4 py-2 text-[2.25rem] font-light uppercase leading-[1.15]"
+        >
+          <span class="text-white opacity-[73%]">купить месяц TALKS</span>
+        </a>
+        <p
+          class="mb-2 text-center text-[4.5rem] font-light leading-[1.15] text-white opacity-[73%]"
+        >
+          1450₽
+        </p>
+        <p
+          class="stolzl-book mt-2 text-center text-[1rem] leading-[1.25] text-white opacity-[73%]"
+        >
+          Хотите оплатить в евро, <br />
+          тенге, гривнах и т.д.? <br />
+          Пишите нам в правом <br />
+          нижнем углу экрана.
+        </p>
+      </div>
+      <div class="desk:hidden pain-talks-20 -mt-[6.694rem]">
+        <div class="flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-large-padding ml-[0.6875rem] mt-[4rem]"
+          >
+            <p aria-hidden="true">Здоровье</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-small-padding ml-[18.75rem]"
+          >
+            <p aria-hidden="true">Наука</p>
+          </div>
+        </div>
+        <div class="mt-[0.3125rem] flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-large-padding margin-top-32 ml-[2.1563rem] mt-[4rem]"
+          >
+            <p aria-hidden="true">Заряд на жизнь</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-small-padding margin-left-16"
+          >
+            <p aria-hidden="true">Медицинские загадки</p>
+          </div>
+        </div>
+        <div class="mt-[2.6875rem] flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-small-padding margin-right-64 ml-[0.6875rem]"
+          >
+            <p aria-hidden="true">Детский восторг</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom margin-top-24 pain-talks-large-padding"
+          >
+            <p aria-hidden="true">Молодость</p>
+          </div>
+        </div>
+        <div class="margin-top-32 flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-large-padding ml-[9.4375rem]"
+          >
+            <p aria-hidden="true">Отдых</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom margin-top-16 margin-left-32 pain-talks-large-padding"
+          >
+            <p aria-hidden="true">Культура и история</p>
+          </div>
+        </div>
+        <div class="margin-top-16 flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom margin-right-90 pain-talks-large-padding ml-[0.6875rem]"
+          >
+            <p aria-hidden="true">Музыка</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom margin-top-16 pain-talks-small-padding"
+          >
+            <p aria-hidden="true">Психология и отношения</p>
+          </div>
+        </div>
+        <div class="mt-[2.625rem] flex flex-row">
+          <div
+            class="pain pain-white pain-talks-bottom margin-top-16 pain-talks-small-padding ml-[10.8125rem] mr-[4.5625rem]"
+          >
+            <p aria-hidden="true">Последние новости</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-small-padding"
+          >
+            <p aria-hidden="true">Мода</p>
+          </div>
+        </div>
+        <div
+          class="pain pain-white pain-talks-bottom pain-talks-small-padding ml-[25.8125rem] mt-[2.388rem]"
+        >
+          <p aria-hidden="true">Путешествия</p>
+        </div>
+        <div
+          class="pain pain-white pain-talks-bottom pain-talks-small-padding ml-[16.9063rem] mt-[3.3125rem]"
+        >
+          <p aria-hidden="true">Искусство</p>
+        </div>
+        <div class="mt-[3.3125rem] flex">
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-large-padding margin-top-16 ml-[6.1875rem] mr-[6.1875rem]"
+          >
+            <p aria-hidden="true">Секреты мозга</p>
+          </div>
+          <div
+            class="pain pain-white pain-talks-bottom pain-talks-small-padding"
+          >
+            <p aria-hidden="true">Литература</p>
+          </div>
+        </div>
+      </div>
+      <div class="mob:mt-[10.6rem] mob:pl-[3.7rem]">
+        <h2 class="mb-6 text-[2.25rem] font-light leading-[1.25] opacity-[73%]">
           Вертфоллен Talks —<br />
-          это лайт версия Шота Жизни.
+          это лайт версия Шота <br class="desk:hidden" />
+          Жизни.
         </h2>
+        <div
+          class="mob:text-[1.25rem] desk:gap-4 flex flex-col text-[1.375rem] font-light leading-[1.20] opacity-[73%]"
+        >
+          <p>
+            Шот Жизни — это не просто заряд сил, <br />
+            а хирургическая работа над собой.
+          </p>
+          <p class="mob:leading-[1.625rem] mob:mt-8 desk:ml-[0.4rem]">
+            <span
+              class="mob:hidden desk:inline-block desk:ml-[0.4ch] desk:mr-[0.1ch]"
+              >1.
+            </span>
+            В разы более комплексные подкасты
+            <br class="desk:hidden" />
+            о вашей психике <br />
+            <span class="mob:hidden">2. </span> Личные разборы от господина
+            Вертфоллена <br />
+            <span class="mob:hidden">3. </span> Работа с личным куратором <br />
+            <span class="mob:hidden">4. </span> Возможность овладеть новой
+            профессией <br />
+            <span class="mob:hidden">5. </span> Субботние перформансы каждую
+            неделю <br />
+            <span class="mob:hidden">6. </span> Комьюнити, которое тянет вас
+            вперёд
+          </p>
+          <p class="mob:mt-[2.375rem]">
+            Если вы готовы на по-настоящему <br />
+            серьёзную работу над собой, <br class="desk:hidden" />
+            берите сразу Шот Жизни.
+          </p>
+          <p class="mob:mt-[1.625rem] mob:text-[1.375rem] ml-8 mt-4">
+            Доступ к Вертфоллен Talks <br />
+            входит в программу Шота.
+          </p>
+        </div>
+        <a
+          href="./intex.html"
+          class="mob:mt-6 relative z-10 mt-8 block w-fit text-[1.5rem] font-light uppercase leading-[1]"
+          ><p class="absolute left-8 top-[0.65rem] z-20 opacity-[73%]">
+            узнать больше
+          </p>
+          <img
+            draggable="false"
+            src="./assets/img/Talks/talks-5-block-button.svg"
+            class="relative right-0 top-0 z-0 h-[2.8125rem] w-[17.125rem]"
+            alt=""
+        /></a>
       </div>
     </section>
   </body>

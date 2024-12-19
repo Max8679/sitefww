@@ -14,7 +14,7 @@ module.exports = {
       lightGray: "rgba(213, 213, 212, 0.99)", //#D5D5D4
       graniteGray: "#626262",
       zincDust: "#5B5B5B",
-      accentText: "rgb(62, 62, 62)",
+      accentText: "rgb(60, 60, 60)",
     },
     extend: {},
   },
