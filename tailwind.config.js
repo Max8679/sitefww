@@ -3,8 +3,8 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     screens: {
-      mob: { max: "28.125rem" },
-      desk: { min: "28.1875rem" },
+      mob: { max: "450px" },
+      desk: { min: "451px" },
     },
     colors: {
       black: "#000000",

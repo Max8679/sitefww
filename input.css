@@ -67,8 +67,138 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Sverdlovsk";
+    src: url("./assets/fonts/SverdlovskRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat Alternates";
+    src: url("./assets/fonts/MontserratAlternates-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .book-title {
+    font-family: "Sverdlovsk";
+    font-size: 4.25rem;
+    line-height: 4.25rem;
+    letter-spacing: 0.2562rem;
+    color: black;
+    font-weight: 400;
+    opacity: 1;
+    stroke: black;
+    -webkit-text-stroke: 0.0625rem black;
+  }
+
+  .fix-stroke {
+    paint-order: stroke fill;
+  }
+
+  .book-subtitle {
+    font-family: "Montserrat Alternates";
+    font-size: 1.0625rem;
+    line-height: 1.275rem;
+    letter-spacing: 0.0437rem;
+    color: black;
+  }
+
+  .book-link {
+    font-family: "Sverdlovsk";
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1375rem;
+    color: #110f0f;
+    border: 0.0625rem solid #010202;
+    display: block;
+    width: fit-content;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .book-price {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .book-price-accent {
+    color: #eda704;
+    font-weight: 600;
+    font-family: "Montserrat";
+    line-height: 1.4375rem;
+    font-size: 1.875rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .book-currency {
+    color: #5b5b5b;
+  }
+
+  .book-btn {
+    font-family: "Sverdlovsk";
+    font-size: 2.6875rem;
+    line-height: 2.6875rem;
+    height: 4.1875rem;
+    letter-spacing: 0.1375rem;
+    color: white;
+    padding: 0.75rem 8.6406rem 0.75rem 8.6406rem;
+    background-color: black;
+  }
+
+  .book-img {
+    width: 36.25rem;
+    height: 36.25rem;
+  }
+
+  .book-regular {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .montserrat-alternates {
+    font-family: "Montserrat Alternates";
+  }
+
+  .montserrat {
+    font-family: "Montserrat";
+  }
+
+  .sverdlovsk {
+    font-family: "Sverdlovsk";
+  }
+
   body {
     font-family: "Stolzl";
+  }
+
+  .glide__slide {
+    height: fit-content;
   }
 
   h1 {
@@ -152,7 +282,38 @@
     opacity: 0.75;
   }
 
+  .times-new-roman {
+    font-family: "Times New Roman";
+  }
+
   @media (max-width: 450px) {
+    .book-img {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    .book-title {
+      font-size: 2.8125rem;
+      text-align: center;
+    }
+
+    .book-btn {
+      padding-left: 7.7031rem;
+      padding-right: 7.7031rem;
+    }
+
+    .book-price {
+      text-align: center;
+      font-size: 1.4375rem;
+      letter-spacing: 0.2375rem;
+    }
+
+    .book-price-accent {
+      text-align: center;
+      font-size: 1.4375rem;
+      letter-spacing: 0.2375rem;
+    }
+
     h1 {
       font-size: 4.375rem;
       opacity: 0.8;
