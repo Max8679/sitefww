@@ -99,6 +99,23 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Montserrat Alternates";
+    src: url("./assets/fonts/MontserratAlternates-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat Alternates";
+    src: url("./assets/fonts/MontserratAlternates-Regular.woff2")
+      format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   .book-title {
     font-family: "Sverdlovsk";
     font-size: 4.25rem;
@@ -121,6 +138,7 @@
     line-height: 1.275rem;
     letter-spacing: 0.0437rem;
     color: black;
+    font-weight: 300;
   }
 
   .book-link {

@@ -3,72 +3,547 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>О Кузнечиках</title>
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      html {
+        font-size: calc(-0.005825242718446644rem + 1.087378640776699vw);
+      }
+      @media screen and (max-width: 1480px) {
+        html {
+          font-size: calc(-0.005825242718446588rem + 1.087378640776699vw);
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html {
+          font-size: calc(-0.0022271714922048997rem + 3.5634743875278394vw);
+        }
+      }
+    </style>
+
+    <!-- Pixel Glass -->
     <style>
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
         /* Mobile layout by default */
-        background-image: url("./assets/img/Grasshopers/Group 1.png");
+        background-image: url("./assets/img/Grasshopers/макет\ адаптация.jpg");
+      }
+      /* Desktop */
+      @media (min-width: 1450px) {
+        HTML {
+          /* Desktop layout */
+          background-image: url("./assets/img/Grasshopers/макет\ v4.jpg");
+        }
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
     <script src="../node_modules/pixel-glass/script.js"></script>
-  </head>
-  <body class="times-new-roman">
-    <!--Секция №1-->
-    <section
-      class="bg-[url('./assets/img/Grasshopers/grasshopers-1-block-bg.png')] bg-cover bg-no-repeat px-[6.75rem] pb-[16.1875rem] pt-[18.75rem]"
-    >
-      <div class="flex flex-row justify-end">
-        <div class="flex flex-col items-center gap-[6.625rem] text-center">
-          <div class="flex flex-col">
-            <h1
-              class="text-[4.5rem] leading-[4.5rem] text-[#FFDFA5] opacity-100 [text-shadow:_-0.125rem_0.25rem_0.25rem_#000000]"
-            >
-              «О Кузнечиках»
-            </h1>
-            <p
-              class="text-[2.375rem] leading-[5.4625rem] text-[#FFDFA5] [text-shadow:_0.125rem_0.125rem_0.1875rem_#000000]"
-            >
-              Франц Вертфоллен
-            </p>
-          </div>
-          <button
-            class="flex w-fit flex-row gap-[1.5625rem] rounded-[2.4375rem] bg-[#FFE6BA] bg-opacity-[78%] px-6 py-3 [box-shadow:_0_0_0.9375rem_0.6875rem_rgba(0,0,0,0.5)] [text-shadow:_0_0_0.625rem_rgba(0,0,0,0.3)]"
-          >
-            <!--Картинка корзины маловата по сравнению с макетом-->
-            <img
-              class="h-[3.5rem] w-[3.9375rem]"
-              src="./assets/img/Grasshopers/grasshoppers-1-block-cart.svg"
-              alt=""
-            />
-            <span
-              class="text-[3.3125rem] leading-[3.5rem] [text-shadow:_0_0_0.625rem_rgba(0,_0,_0,_0.3)]"
-              >В КОРЗИНУ</span
-            >
-          </button>
-        </div>
-      </div>
-    </section>
+    <!-- // Pixel Glass -->
 
-    <!--Секция №2-->
+    <title>О Кузнечиках</title>
+  </head>
+  <body>
+    <!--Секция №1-2-->
     <section
-      class="bg-[url('./assets/img/Grasshopers/grasshopers-2-block-bg.png')] py-[0.9375rem]"
+      class="mob:bg-[url('./assets/img/Grasshopers/grasshopers-1-block-bg-ad.webp')] bg-[url('./assets/img/Grasshopers/grasshopers-1-block-bg.webp')] bg-[size:100%_100%] bg-no-repeat"
     >
-      <h2
-        class="text-center text-[3.9375rem] leading-[3.5625rem] text-[#FFDFA5] [text-shadow:_0.3125rem_-0.25rem_0.1875rem_rgba(0,_0,_0,_0.59)]"
-      >
-        Что вы найдёте в <br />
-        книге...
-      </h2>
+      <!--Секция №1-->
+      <section>
+        <div class="mob:pt-[5.625rem] flex flex-col items-center pt-[3.75rem]">
+          <div class="mob:pb-[7.5rem] pb-[3.75rem]">
+            <div
+              class="mob:flex-col mob:gap-[3.75rem] flex items-center gap-[6.25rem]"
+            >
+              <div class="book-img">
+                <img
+                  src="./assets/img/Grasshopers/grasshopers-1-block-cover.webp"
+                  class="h-full w-full"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mob:px-[1.2813rem] mob:gap-[1.5625rem] flex flex-col gap-[9.5rem]"
+              >
+                <div
+                  class="desk:max-w-[27.4688rem] flex flex-col gap-[1.875rem]"
+                >
+                  <h1 class="book-title">О Кузнечиках</h1>
+                  <div class="h-[0.0625rem] w-full bg-black"></div>
+
+                  <div class="flex flex-col gap-[1.5625rem]">
+                    <div class="flex flex-col gap-4">
+                      <p class="book-subtitle">
+                        Это сборник ранних рассказов и стихов Франца
+                        Вертфоллена.
+                      </p>
+                    </div>
+
+                    <div class="desk:justify-between flex gap-2">
+                      <a href="" class="book-link mob:w-full px-[3.75rem]"
+                        >Сюжет</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    class="mob:justify-center mob:pb-[2.8125rem] mob:gap-[2.8125rem] flex gap-4"
+                  >
+                    <div>
+                      <p class="book-price-accent">550₽</p>
+                      <div class="desk:py-4 pt-4">
+                        <p class="book-price desk:pb-1">3,300 тенге</p>
+                        <a href="" class="book-price mob:hidden book-currency"
+                          >оплатить в другой валюте</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <button class="book-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Мобильная версия блока "О сюжете"-->
+          <div
+            class="mob:px-[0.9375rem] desk:hidden pb-[5.625rem] pt-[1.875rem]"
+          >
+            <h2 class="book-title">О сюжете</h2>
+
+            <div
+              class="book-regular flex flex-col gap-4 pt-[2.8125rem] leading-[1.6875rem]"
+            >
+              <p>Это сборник ранних рассказов и стихов.</p>
+              <p>
+                Если вы не знаете с чего начать знакомство с вселенными Франца
+                Вертфоллена, это отличный вариант. <br />
+                В историях нет героев вселенных, но это возможность заглянуть в
+                голову г-на Вертфоллена в юности.
+              </p>
+              <p>
+                Истории, которые очень нужны каждому в период взросления и в
+                моменты, когда вам кажется, что вы не справляетесь со своей
+                жизнью.
+              </p>
+              <p>
+                Они переплетаются с японскими мифами и известными сказками из
+                детства.
+              </p>
+              <p>Подробнее о трёх историях из книги ниже.</p>
+            </div>
+          </div>
+
+          <!--Десктопная версия блока "Как читать"-->
+          <div
+            class="mob:hidden flex items-center gap-20 bg-[size:100%_100%] bg-no-repeat pb-[3.75rem] pt-[1.875rem]"
+          >
+            <p class="book-title">Как читать:</p>
+            <ul class="flex gap-[3.75rem]">
+              <li>
+                <div class="h-[12.5rem] w-[12.5rem]">
+                  <img
+                    src="./assets/img/icons/hold-phone.svg"
+                    class="h-full w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="book-regular text-center">
+                  На электронной <br />
+                  читалке
+                </p>
+              </li>
+              <li>
+                <div class="h-[12.5rem] w-[12.5rem]">
+                  <img
+                    src="./assets/img/icons/hold-book-disabled.svg"
+                    class="h-full w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="book-regular text-center">
+                  Шелестеть <br />
+                  страницами
+                </p>
+              </li>
+              <li>
+                <div class="h-[12.5rem] w-[12.5rem]">
+                  <img
+                    src="./assets/img/icons/man-laptop-disabled.svg"
+                    class="h-full w-full"
+                    alt=""
+                  />
+                </div>
+                <p class="book-regular text-center">
+                  Смотреть видео- <br />
+                  спектакль
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Секция №2-->
+      <section>
+        <!--Мобильная версия блока "Как читать"-->
+        <div
+          class="mob:flex-col desk:hidden mob:bg-[url('./assets/img/Neapol/neapol-1.2-block-bg-ad.webp')] mob:gap-10 flex items-center gap-20 bg-[size:100%_100%] bg-no-repeat pb-[3.75rem] pt-[1.875rem]"
+        >
+          <p class="book-title mob:text-[4.25rem]">Как читать:</p>
+          <ul class="mob:flex-col flex gap-[3.75rem]">
+            <li>
+              <div class="h-[12.5rem] w-[12.5rem]">
+                <img
+                  src="./assets/img/icons/hold-phone.svg"
+                  class="h-full w-full"
+                  alt=""
+                />
+              </div>
+              <p class="book-regular text-center">
+                На электронной <br />
+                читалке
+              </p>
+            </li>
+            <li>
+              <div class="h-[12.5rem] w-[12.5rem]">
+                <img
+                  src="./assets/img/icons/hold-book-disabled.svg"
+                  class="h-full w-full"
+                  alt=""
+                />
+              </div>
+              <p class="book-regular text-center">
+                Шелестеть <br />
+                страницами
+              </p>
+            </li>
+            <li>
+              <div class="h-[12.5rem] w-[12.5rem]">
+                <img
+                  src="./assets/img/icons/man-laptop-disabled.svg"
+                  class="h-full w-full"
+                  alt=""
+                />
+              </div>
+              <p class="book-regular text-center">
+                Смотреть видео- <br />
+                спектакль
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!--Десктопная версия блока "О сюжете"-->
+        <div
+          class="mob:hidden px-[15.4375rem] pb-[5.625rem] pt-[3.75rem] text-center"
+        >
+          <h2 class="book-title">О сюжете</h2>
+
+          <div
+            class="book-regular flex flex-col gap-4 pt-[2.8125rem] leading-[1.6875rem]"
+          >
+            <p>Это сборник ранних рассказов и стихов.</p>
+            <p>
+              Если вы не знаете с чего начать знакомство с вселенными Франца
+              Вертфоллена, <br />
+              это отличный вариант. В историях нет героев вселенных, <br />
+              но это возможность заглянуть в голову г-на Вертфоллена в юности.
+            </p>
+            <p>
+              Истории, которые очень нужны каждому в период взросления и в
+              моменты, когда вам кажется, что вы не справляетесь со своей
+              жизнью.
+            </p>
+            <p>
+              Они переплетаются с японскими мифами и известными сказками из
+              детства.
+            </p>
+            <p>Подробнее о трёх историях из книги ниже.</p>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!--Секция №3-->
-    <section>
-      <h2>Муравей</h2>
-      <h3>крайне буддийская притча</h3>
+    <section
+      class="mob:bg-[url('./assets/img/Grasshopers/grasshopers-3-block-bg-ad.webp')] bg-[url('./assets/img/Grasshopers/grasshopers-3-block-bg.webp')] pb-[5.625rem] pt-[3.75rem]"
+    >
+      <img
+        src="./assets/img/Grasshopers/grasshopers-3-block-images-top-ad.webp"
+        alt=""
+        class="desk:hidden h-[37.875rem] w-[28.25rem]"
+      />
+      <div
+        class="book-regular mob:px-[0.9375rem] mob:gap-[1.875rem] mob:pb-[1.125rem] flex flex-col gap-[2.8125rem] px-[5.625rem] pb-20"
+      >
+        <div class="flex flex-col gap-4">
+          <h2 class="book-title">Муравей</h2>
+          <p class="mob:text-center">крайне буддийская притча</p>
+        </div>
+
+        <div class="mob:gap-[1.125rem] flex flex-col gap-4">
+          <p>
+            Когда-то Крылов и другие классики использовали зверей, чтобы
+            <br class="mob:hidden" />
+            показать людям самих себя со стороны. 
+          </p>
+          <p>
+            И пока хохочешь, к тебе приходит понимание: не с одними
+            <br class="mob:hidden" />
+            Аньками и Любками случается зависть. Легенькая, крохотная
+            <br class="mob:hidden" />
+            сценка забрасывает в гладь твоего самомнения камушек, и от
+            <br class="mob:hidden" />
+            него расходятся круги: “А такой ли я праведный? А я, я какой на
+            <br class="mob:hidden" />
+            фоне всех этих зверей?” 
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="montserrat-alternates mob:gap-[1.125rem] mob:book-regular mob:text-left mob:px-[0.9375rem] mob:py-0 flex flex-col gap-[1.875rem] px-[5.625rem] py-20 text-center text-[1.25rem] font-medium leading-[initial]"
+      >
+        <p>
+          В других людях недостатки колют глаз. <br />
+          Встретив неидеального героя, ты решительно говоришь себе:
+        </p>
+        <p>
+          “Боже, такой идиот, его глупость — это точно не про меня!” <br />
+          <span class="mob:hidden">С животными и насекомыми проще.</span>
+        </p>
+        <p>
+          <span class="desk:hidden"
+            >С животными и насекомыми проще. <br
+          /></span>
+          Вот хохочешь над мухами из рассказа, что сплетничают, <br />
+          как типичные-типичные бабки, и думаешь:
+        </p>
+        <p>
+          “Да, прямо мои коллеги, вот Анька с Любкой только так и обсуждают
+          других дам. <br class="mob:hidden" />
+          Кто симпатичнее, чем они, кто получше устроился,
+          <br class="mob:hidden" />
+          каждая у них — стрекоза.”
+        </p>
+      </div>
+
+      <div class="desk:hidden pl-[0.9375rem] pt-[1.875rem]">
+        <img
+          src="./assets/img/Grasshopers/grasshopers-3-block-images-bottom-ad.webp"
+          alt=""
+          class="desk:hidden h-[31.375rem] w-[28rem]"
+        />
+      </div>
+
+      <div
+        class="book-regular mob:px-[0.9375rem] mob:pt-[1.875rem] mob:gap-[1.125rem] flex flex-col gap-[0.625rem] px-[5.625rem] pt-20"
+      >
+        <p>
+          Мне нравится, как искусно в “Муравье” Франц Вертфоллен дает
+          <br class="mob:hidden" />
+          тебе взглянуть на мир людей в миниатюре, и получить честный
+          <br class="mob:hidden" />
+          ответ на вопрос “Какой я человек?”.
+        </p>
+        <p>
+          Каждый герой оставляет в тебе частичку себя. С тобой
+          <br class="mob:hidden" />
+          навсегда остается пугающий образ старой мыши-полевки,
+          <br class="mob:hidden" />
+          невозможность разобрать — за что ее считает дурой <br />
+          окружение, если она говорит правильные вещи? Правильные ли?
+        </p>
+        <p>
+          Конечная мысль Муравья о вселенной звенит в тебе каждый раз,
+          <br class="mob:hidden" />
+          как замечаешь звезды. Как и слова веселящего своим умом и
+          <br class="mob:hidden" />
+          прагматичностью — крайне буддийского — кота Васи: 
+        </p>
+        <p>“Любой ад – это недопонятый рай.”</p>
+      </div>
+    </section>
+
+    <!--Секция №4-->
+    <section
+      class="mob:px-[0.9375rem] mob:bg-[url('./assets/img/Grasshopers/grasshopers-4-block-bg-ad.webp')] bg-[url('./assets/img/Grasshopers/grasshopers-4-block-bg.webp')] bg-cover bg-no-repeat pb-[5.625rem] pl-[44.65rem] pr-[5.625rem] pt-[3.75rem]"
+    >
+      <div class="desk:hidden pb-[1.875rem]">
+        <img
+          src="./assets/img/Grasshopers/grasshopers-4-block-images-ad.webp"
+          alt=""
+          class="desk:hidden h-[34.5769rem] w-[27.9094rem]"
+        />
+      </div>
+
+      <h2 class="book-title mob:text-center">
+        Волны <br />
+        последнего моря
+      </h2>
+      <div class="book-regular flex flex-col gap-4 pt-[2.8125rem]">
+        <p>
+          Что происходит с душами, когда они покидают наш мир? <br />
+          Что делать, если вместо того, чтобы умереть, ты застрял неприкаянным
+          призраком? Утопленница говорит — искать <br class="mob:hidden" />
+          ангела хранителя.
+        </p>
+        <p>
+          Если описывать эту сказку в одном слове — это катарсис.
+          <br class="mob:hidden" />
+          Катарсис, которого ты абсолютно не ждешь. <br />
+          Когда дочитываешь ее до конца, тебя будто отпускает что-то очень
+          тяжелое внутри, и ты возвращаешься на родину — в волны последнего
+          моря. Не важно, сколько тебе лет, о чем ты думаешь в последнее время и
+          чем занят — волны последнего моря очистят тебя и омолодят. 
+        </p>
+        <p>
+          Читаешь про мир мертвых, и как с “Муравьем”,  под микроскопом видишь
+          мир живых. Себя. И получаешь очаровательный, легкий ответ на нелегкий
+          вопрос — почему людям так тяжко дается счастье?
+        </p>
+      </div>
+    </section>
+
+    <!--Секция №5-->
+    <section
+      class="mob:pt-[3.75rem] desk:shadow-[inset_0_-0.375rem_0.9375rem_0_rgba(0,0,0,0.45)] mob:bg-[url('./assets/img/Grasshopers/grasshopers-5-block-bg-ad.webp')] bg-[url('./assets/img/Grasshopers/grasshopers-5-block-bg.webp')] bg-cover bg-no-repeat"
+    >
+      <div class="desk:hidden px-[0.9375rem]">
+        <img
+          src="./assets/img/Grasshopers/grasshopers-5-block-images-top-ad.webp"
+          alt=""
+          class="desk:hidden h-[22.25rem] w-[26.25rem]"
+        />
+      </div>
+
+      <div
+        class="mob:pt-[1.875rem] mob:px-[0.9375rem] mob:pb-0 px-[5.625rem] pb-20 pt-[3.75rem]"
+      >
+        <h2 class="book-title">О Кузнечиках</h2>
+        <div
+          class="book-regular mob:pt-[1.875rem] mob:gap-[1.125rem] flex flex-col gap-4 pt-[2.8125rem]"
+        >
+          <p>
+            Как вернуть себе юность и жажду до жизни? Будь вам 17 или 71,
+            <br class="mob:hidden" />
+            рутина выпивает силы каждого. Самая безжалостная, самая
+            <br class="mob:hidden" />
+            смертельная вещь — повседневность.
+          </p>
+          <p>
+            Опытный синоби уверен — выход прост. Нет для людей подарка
+            <br class="mob:hidden" />
+            долгожданнее, чем смерть. Только с ней приходит вечное
+            <br class="mob:hidden" />
+            освобождение.
+          </p>
+          <p>
+            Великие правители и обычные люди, страдания которых синоби
+            <br class="mob:hidden" />
+            прерывал, были мертвы задолго до того, как попасть под его
+            <br class="mob:hidden" />
+            клинок. Но он отличался от своих мишеней. Он был
+            <br class="mob:hidden" />
+            проницателен. В череде будней он был способен различить
+            <br class="mob:hidden" />
+            редкие всполохи красоты:
+          </p>
+        </div>
+      </div>
+
+      <div class="desk:hidden px-[0.9375rem] py-[1.875rem]">
+        <img
+          src="./assets/img/Grasshopers/grasshopers-5-block-images-bottom-ad.webp"
+          alt=""
+          class="desk:hidden h-[21.6875rem] w-[25.75rem]"
+        />
+      </div>
+
+      <!--Десктопная версия текста-->
+      <div
+        class="montserrat-alternates mob:hidden flex flex-col gap-[1.875rem] py-[7.5rem] text-center text-[1.25rem] font-medium leading-[initial]"
+      >
+        <p>
+          “Красота неуловима, давно потеряна <br />
+          и вообще её не бывает,
+        </p>
+        <p>
+          но с того момента она застряла внутри меня таким ярким осколком,
+          <br />
+          что я почти назвал бы это предчувствием.
+        </p>
+        <p>
+          На однотипной равнине всех человеческих жизней, <br />
+          я бы назвал это робким предчувствием гор.”
+        </p>
+      </div>
+
+      <!--Мобильная версия текста-->
+      <div
+        class="montserrat-alternates desk:hidden mob:gap-[1.125rem] mob:book-regular mob:text-left mob:px-[0.9375rem] mob:py-0"
+      >
+        <p>
+          “Красота неуловима, давно потеряна <br />
+          и вообще её не бывает, но с того момента она застряла внутри меня
+          таким ярким осколком, что я почти назвал бы это предчувствием. <br />
+          На однотипной равнине всех человеческих жизней, я бы назвал это робким
+          предчувствием гор.”
+        </p>
+      </div>
+
+      <div
+        class="book-regular mob:px-[0.9375rem] mob:gap-[1.125rem] mob:pt-[1.125rem] flex flex-col gap-4 pb-[5.625rem] pl-[5.625rem] pt-20"
+      >
+        <p>
+          Этот короткий рассказ учит вас замечать красоту. <br />
+          Ту самую, что наполняет легкие жизнью.
+        </p>
+        <p>“О Кузнечиках” — весь сборник  — противоядие от усталости.</p>
+      </div>
+    </section>
+
+    <!--Секция №6-->
+    <section
+      class="bg-no-repeat] mob:px-[0.9375rem] bg-[url('./assets/img/Grasshopers/grasshopers-6-block-bg.webp')] bg-cover px-[18.75rem] py-[3.75rem] text-center"
+    >
+      <h2 class="book-title">Что еще вас ждёт:</h2>
+
+      <!--Десктопная версия текста-->
+      <div
+        class="mob:hidden border-b-[0.0625rem] border-black pb-8 pt-[2.8125rem]"
+      >
+        <p class="book-regular">
+          Также в сборник входит сказка “Горбун”, <br />
+          “Монолог Сфинкса”, “Воспоминания очень странной рыбы”, <br />
+          и еще многие путешествия в яркие миры, в которых хочется поселиться.
+          <br />
+          Древние мифы и легенды обретают новую жизнь в рассказах <br />
+          и стихах господина Вертфоллена. 
+        </p>
+      </div>
+
+      <!--Мобильная версия текста-->
+      <div
+        class="book-regular desk:hidden flex flex-col gap-[2ch] border-b-[0.0625rem] border-black pb-[1.125rem] pt-[2.8125rem]"
+      >
+        <p>
+          Также в сборник входит сказка “Горбун”, <br />
+          “Монолог Сфинкса”, “Воспоминания очень странной рыбы”, <br />
+        </p>
+        <p>
+          и еще многие путешествия в яркие миры, в которых хочется поселиться.
+          <br />
+          Древние мифы и легенды обретают новую жизнь в рассказах <br />
+          и стихах господина Вертфоллена. 
+        </p>
+      </div>
+      <div class="pt-[2.8125rem]">
+        <button class="book-btn">В корзину</button>
+      </div>
     </section>
   </body>
 </html>
